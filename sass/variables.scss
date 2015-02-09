@@ -1,0 +1,10 @@
+$primary: #f7941f;
+// Used for branding and main link
+$secondary: #21b474;
+$tertiary: #0570bd;
+// Yan do not suggest use more than three colors in one website
+$black-base: #f5f5f5;
+$white-base: #222222;
+
+$primary-light: lighten( $primary, 10%);
+$primary-dark: darken( $primary, 10%);
