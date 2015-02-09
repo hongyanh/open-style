@@ -1,2 +1,86 @@
 * { box-sizing: border-box }
 
+[class*='col-'] {
+  float:left;
+}
+
+.col-1of3 {
+  width: 100% / 3 * 1;
+}
+
+.col-2of3 {
+  width: 100% / 3 * 2;
+}
+
+.col-1of4 {
+  width: 100% / 4 * 1;
+}
+
+.col-1of2 {
+  width: 100% / 2 * 1;
+}
+
+.col-3of4 {
+  width: 100% / 4 * 3;
+}
+
+.col-1of5 {
+  width: 100% / 5 * 1;
+}
+
+.col-2of5 {
+  width: 100% / 5 * 2;
+}
+
+.col-3of5 {
+  width: 100% / 5 * 3;
+}
+
+.col-4of5 {
+  width: 100% / 5 * 4;
+}
+
+.col-1of3-g {
+  width: 100% / 3 * 1 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-2of3-g {
+  width: 100% / 3 * 2 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-1of4-g {
+  width: 100% / 4 * 1 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-1of2-g {
+  width: 100% / 2 * 1 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-3of4-g {
+  width: 100% / 4 * 3 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-1of5-g {
+  width: 100% / 5 * 1 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-2of5-g {
+  width: 100% / 5 * 2 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-3of5-g {
+  width: 100% / 5 * 3 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-4of5-g {
+  width: 100% / 5 * 4 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}

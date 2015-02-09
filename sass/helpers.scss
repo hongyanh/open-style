@@ -10,7 +10,7 @@
   float: right;
 }
 
-.clear-float {
+.clear {
   clear: both;
 }
 
@@ -24,4 +24,189 @@
 
 .layer-2 {
   z-index: 2;
+}
+
+.pri-bg {
+  background-color: $primary-base;
+}
+
+.pri-bg-l {
+  background-color: $primary-light;
+}
+
+.pri-bg-d {
+  background-color: $primary-dark;
+}
+
+.sec-bg {
+  background-color: $secondary-base;
+}
+
+.sec-bg-l {
+  background-color: $secondary-light;
+}
+
+.sec-bg-d {
+  background-color: $secondary-dark;
+}
+
+.ter-bg {
+  background-color: $tertiary-base;
+}
+
+.ter-bg-l {
+  background-color: $tertiary-light;
+}
+
+.ter-bg-d {
+  background-color: $tertiary-dark;
+}
+
+
+.black-bg {
+  background-color: $black-base;
+}
+
+.black-bg-l {
+  background-color: $black-light;
+}
+
+.black-bg-d {
+  background-color: $black-dark;
+}
+
+.white-bg {
+  background-color: $white-base;
+}
+
+.white-bg-l {
+  background-color: $white-light;
+}
+
+.white-bg-d {
+  background-color: $white-dark;
+}
+
+.white-txt {
+  color: $white-base;
+  font-weight: $font-light;
+}
+
+.white-txt-l {
+  color: $white-light;
+  font-weight: $font-light;
+}
+
+.white-txt-d {
+  color: $white-dark;
+  font-weight: $font-light;
+}
+
+.black-txt {
+  color: $black-base;
+}
+
+.black-txt-l {
+  color: $black-light;
+}
+
+.black-txt-d {
+  color: $black-dark;
+}
+
+.pri-txt {
+  color: $primary-base;
+}
+
+.pri-txt-l {
+  color: $primary-light;
+}
+
+.pri-txt-d {
+  color: $primary-dark;
+}
+
+.sec-txt {
+  color: $secondary-base;
+}
+
+.sec-txt-l {
+  color: $secondary-light;
+}
+
+.sec-txt-d {
+  color: $secondary-dark;
+}
+
+.ter-txt {
+  color: $tertiary-base;
+}
+
+.ter-txt-l {
+  color: $tertiary-light;
+}
+
+.ter-txt-d {
+  color: $tertiary-dark;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.light {
+  font-weight: $font-light;
+}
+
+@mixin margin-lr($gap) {
+  margin-left: $gap;
+  margin-right: $gap;
+}
+
+.padding-1 {
+  padding: $size-r1;
+}
+
+.margin-t1 {
+  margin-top: $size-r1;
+}
+
+.margin-t2 {
+  margin-top: $size-r2;
+}
+
+.margin-t3 {
+  margin-top: $size-r3;
+}
+
+.margin-b1 {
+  margin-bottom: $size-r1;
+}
+
+.margin-b2 {
+  margin-bottom: $size-r2;
+}
+
+.margin-b3 {
+  margin-bottom: $size-r3;
+}
+
+.margin-l1 {
+  margin-left: $size-r1;
+}
+
+.margin-l2 {
+  margin-left: $size-r2;
+}
+
+.margin-l3 {
+  margin-left: $size-r3;
 }

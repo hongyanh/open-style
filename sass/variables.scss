@@ -1,10 +1,43 @@
-$primary: #f7941f;
-// Used for branding and main link
-$secondary: #21b474;
-$tertiary: #0570bd;
-// Yan do not suggest use more than three colors in one website
-$black-base: #f5f5f5;
-$white-base: #222222;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
-$primary-light: lighten( $primary, 10%);
-$primary-dark: darken( $primary, 10%);
+$primary-base: #f7941f;
+// Used for branding and main link
+$secondary-base: #21b474;
+$tertiary-base: #0570bd;
+// Yan do not suggest use more than three colors in one website
+$black-base: #222;
+$white-base: #f5f5f5;
+
+$primary-light: lighten( $primary-base, 10%);
+$primary-dark: darken( $primary-base, 10%);
+
+$secondary-light: lighten( $secondary-base, 10%);
+$secondary-dark: darken( $secondary-base, 10%);
+
+$tertiary-light: lighten( $tertiary-base, 10%);
+$tertiary-dark: darken( $tertiary-base, 10%);
+
+$black-light: lighten( $black-base, 10%);
+$black-dark: darken( $black-base, 10%);
+
+$white-light: lighten( $white-base, 10%);
+$white-dark: darken( $white-base, 10%);
+
+$font-size: 14px;
+
+$size-p1: 1%;
+$size-p2: $size-p1 * 2;
+$size-p3: $size-p1 * 3;
+
+$size-r1: 1rem;
+$size-r2: $size-r1 * 2;
+$size-r3: $size-r1 * 3;
+
+$text-align: left;
+
+$font: 'Open Sans', sans-serif;
+$font-light: 300;
+$font-normal: 400;
+$font-semi: 600;
+$font-bold: 700;
+$font-extra: 800;
