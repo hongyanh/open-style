@@ -357,8 +357,14 @@ td,
 th {
   padding: 0; }
 
+.fix {
+  position: fixed; }
+
 .full-width {
   width: 100%; }
+
+.full-height {
+  height: 100%; }
 
 .pull-left {
   float: left; }
@@ -483,8 +489,33 @@ th {
 .light {
   font-weight: 300; }
 
+.normal {
+  font-weight: 400; }
+
+.semi {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.extra {
+  font-weight: 800; }
+
 .padding-1 {
   padding: 1rem; }
+
+.padding-l1 {
+  padding-left: 1rem; }
+
+.padding-r1 {
+  padding-right: 1rem; }
+
+.padding-lr1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padding-l2 {
+  padding-left: 2rem; }
 
 .margin-t1 {
   margin-top: 1rem; }
@@ -512,6 +543,14 @@ th {
 
 .margin-l3 {
   margin-left: 3rem; }
+
+.margin-l1t1 {
+  margin-left: 1rem;
+  margin-top: 1rem; }
+
+.margin-l1t2 {
+  margin-left: 1rem;
+  margin-top: 2rem; }
 
 * {
   box-sizing: border-box; }
@@ -591,10 +630,41 @@ th {
   margin-left: 1%;
   margin-right: 1%; }
 
+.push-1of3 {
+  margin-left: 33.33333%; }
+
+.push-1of4 {
+  margin-left: 25%; }
+
+.push-1of2 {
+  margin-left: 100% / 2; }
+
+.push-1of5 {
+  margin-left: 20%; }
+
+.push-2of5 {
+  margin-left: 40%; }
+
 html, body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  color: #222; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: #f7941f;
+  transition: all 0.5s ease; }
+
+a:hover {
+  color: #f9ac50; }
+
+img {
+  width: 100%; }
+
+ul {
+  padding-left: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

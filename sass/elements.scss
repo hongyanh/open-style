@@ -1,7 +1,27 @@
 html,body {
   font-family: $font;
+  height: 100%;
+  color: $black-base;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: $font-normal;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-base;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: $primary-light;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-left: $size-r1;
 }

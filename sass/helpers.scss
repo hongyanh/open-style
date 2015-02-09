@@ -1,5 +1,13 @@
+.fix {
+  position: fixed;
+}
+
 .full-width {
-  width: 100%
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
 }
 
 .pull-left {
@@ -165,6 +173,18 @@
 .light {
   font-weight: $font-light;
 }
+.normal {
+  font-weight: $font-normal;
+}
+.semi {
+  font-weight: $font-semi;
+}
+.bold {
+  font-weight: $font-bold;
+}
+.extra {
+  font-weight: $font-extra;
+}
 
 @mixin margin-lr($gap) {
   margin-left: $gap;
@@ -173,6 +193,23 @@
 
 .padding-1 {
   padding: $size-r1;
+}
+
+.padding-l1 {
+  padding-left: $size-r1;
+}
+
+.padding-r1 {
+  padding-right: $size-r1;
+}
+
+.padding-lr1 {
+  padding-left: $size-r1;
+  padding-right: $size-r1;
+}
+
+.padding-l2 {
+  padding-left: $size-r2;
 }
 
 .margin-t1 {
@@ -209,4 +246,14 @@
 
 .margin-l3 {
   margin-left: $size-r3;
+}
+
+.margin-l1t1 {
+  margin-left: $size-r1;
+  margin-top: $size-r1;
+}
+
+.margin-l1t2 {
+  margin-left: $size-r1;
+  margin-top: $size-r2;
 }

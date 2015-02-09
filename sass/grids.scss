@@ -32,6 +32,7 @@
   width: 100% / 5 * 2;
 }
 
+
 .col-3of5 {
   width: 100% / 5 * 3;
 }
@@ -83,4 +84,24 @@
 .col-4of5-g {
   width: 100% / 5 * 4 - $size-p1 * 2;
   @include margin-lr($size-p1);
+}
+
+.push-1of3 {
+  margin-left: 100% / 3 * 1;
+}
+
+.push-1of4 {
+  margin-left: 100% / 4 * 1;
+}
+
+.push-1of2 {
+  margin-left: 100% / 2;
+}
+
+.push-1of5 {
+  margin-left: 100% / 5 * 1;
+}
+
+.push-2of5 {
+  margin-left: 100% / 5 * 2;
 }
