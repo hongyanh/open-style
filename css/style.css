@@ -869,7 +869,7 @@ Forms
 input, textarea {
   border-radius: 5px;
   padding: 1rem;
-  transition: border-color 0.5s ease; }
+  transition: border 0.5s ease; }
 
 /*
 Table

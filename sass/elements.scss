@@ -114,7 +114,7 @@ input, textarea {
   @extend .white-bd-d;
   border-radius: $radius-base;
   padding: $size-r1;
-  transition: border-color 0.5s ease;
+  transition: border 0.5s ease;
 }
 
 input:focus, textarea:focus {

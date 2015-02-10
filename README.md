@@ -1,8 +1,8 @@
 # front-end-starter
-A starter kit for front end development
+A starter kit for front end styling, enjoy it!
 
 ## CSS
-Ready to use (all-in-one) version
+style.css is a ready to use (all-in-one) version
 
 ## SASS
 (comment out the one you do not need in main.scss)
