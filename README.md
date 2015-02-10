@@ -1,9 +1,9 @@
 # Open Style
-A starter kit for front end styling, enjoy it!
+A starter kit for website styling, enjoy it!
 
 ## CSS
-normalize.css makes browsers render all elements more consistently and in line with modern standards
-style.css is a ready to use (all-in-one) version, if you want to use specific helpers, please use sass version
+* normalize.css makes browsers render all elements more consistently and in line with modern standards
+* style.css is a ready to use (all-in-one) version, if you want to use specific helpers, please use sass version
 
 ## SASS
 (comment out the one you do not need in main.scss)

@@ -195,14 +195,28 @@
     <div class="clear-float"></div>
     <div class="padding-l1r1">
       <h2 class="bold" id="button">&#9679; Button</h2>
+      <div class="margin-b1">
       <button>.button</button>
       <button class="button-pri">.button-pri</button>
       <button class="button-sec">.button-sec</button>
       <button class="button-ter">.button-ter</button>
+      </div>
+      <div class="margin-b1">
+      <button class="button-pri shadow">.button-pri .shadow</button>
+      <button class="button-sec shadow">.button-sec .shadow</button>
+      <button class="button-ter shadow">.button-ter .shadow</button>
+      </div>
+      <div class="margin-b1">
       <button class="square">.button .square</button>
       <button class="button-pri square">.button-pri .square</button>
       <button class="button-sec square">.button-sec .square</button>
       <button class="button-ter square">.button-ter .square</button>
+      </div>
+      <div class="margin-b1">
+      <button class="button-pri square shadow">.button-pri .square .shadow</button>
+      <button class="button-sec square shadow">.button-sec .square .shadow</button>
+      <button class="button-ter square shadow">.button-ter .square .shadow</button>
+      </div>
     </div>
     <div class="clear-float"></div>
     <div class="padding-l1r1">
@@ -239,17 +253,23 @@
       <h3>.bg-img</h3>
       <div class="full-width height-20 bg-img">
       </div>
+      <h3>.bg-img-fix</h3>
+      <div class="full-width height-20 bg-img-fix">
+      </div>
       <h3>.cover</h3>
       <div class="full-width height-20 bg-img margin-t1">
         <div class="txt-center cover">
           <div class="center-v">
-            <h1 class="white-txt-d">Hello Hackers!</h1>
-            <h2 class="white-txt-d">Check my code to use this effect.</h2>
+            <code class="white-txt-d">&lt;div class="full-width height-20 bg-img margin-t1"&gt;<br>
+              &lt;div class="txt-center cover"&gt;<br>
+              &lt;div class="center-v"&gt;<br>
+              &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+            </code>
           </div>
         </div>
-      </div>
-      <h3>.bg-img-fix</h3>
-      <div class="full-width height-20 bg-img-fix">
       </div>
       <h3>.bg-video</h3>
       <div class="full-width height-40 bg-video">
@@ -259,16 +279,84 @@
             </video>
             <div class="txt-center cover">
               <div class="center-v">
-                <h1 class="white-txt-d">Hello Hackers!</h1>
-                <h2 class="white-txt-d">Check my code to use this effect.</h2>
+                <code class="white-txt-d">&lt;div class="full-width height-40 bg-video"&gt;<br>
+                        &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;<br>
+                          &lt;source src="videos/bg.webm" type="video/webm"&gt;<br>
+                            &lt;source src="videos/bg.mp4" type="video/mp4"&gt;<br>
+                            &lt;/video&gt;<br>
+                            &lt;div class="txt-center cover"&gt;<br>
+                              &lt;div class="center-v"&gt;<br>
+                                &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
+                              &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                          &lt;/div&gt;<br>
+                          </code>
               </div>
             </div>
           </div>
           <h3>.flash</h3>
-          <div class="full-width"></div>
+          <div class="full-width flash-pri margin-b1">
+            .full-width .flash-pri
+          </div>
+          <div class="full-width flash-sec margin-b1">
+            .full-width .flash-sec
+          </div>
+          <div class="full-width flash-ter margin-b1">
+            .full-width .flash-ter
+          </div>
           <h3>.nav-bar</h3>
+          <nav class="full-width white-bg">
+            <ul class="pull-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul class="pull-right">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="clear-float"></div>
+          </nav>
+          <nav class="full-width pri-bg">
+            <ul class="pull-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul class="pull-right">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="clear-float"></div>
+          </nav>
+          <nav class="full-width sec-bg">
+            <ul class="pull-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul class="pull-right">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="clear-float"></div>
+          </nav>
+          <nav class="full-width ter-bg">
+            <ul class="pull-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul class="pull-right">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="clear-float"></div>
+          </nav>
+          <div class="col-1of5-g">
           <h3>.circle</h3>
+            <img class="circle" src="images/profile.png" alt="">
+          </div>
+          <div class="col-1of5-g">
           <h3>.round</h3>
+            <img class="round" src="images/profile.png" alt="">
+          </div>
         </div>
         <div class="clear-float"></div>
         <hr>

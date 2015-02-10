@@ -335,14 +335,32 @@ li {
 .black-bd-d {
   border: $border-base solid $black-dark;
 }
-.primary-bd {
+.pri-bd {
   border: $border-base solid $primary-base;
 }
-.primary-bd-l {
+.pri-bd-l {
   border: $border-base solid $primary-light;
 }
-.primary-bd-d {
+.pri-bd-d {
   border: $border-base solid $primary-dark;
+}
+.sec-bd {
+  border: $border-base solid $secondary-base;
+}
+.sec-bd-l {
+  border: $border-base solid $secondary-light;
+}
+.sec-bd-d {
+  border: $border-base solid $secondary-dark;
+}
+.ter-bd {
+  border: $border-base solid $tertiary-base;
+}
+.ter-bd-l {
+  border: $border-base solid $tertiary-light;
+}
+.ter-bd-d {
+  border: $border-base solid $tertiary-dark;
 }
 .shadow-lb {
   box-shadow: -1px 2px 12px -3px $black-light;
