@@ -381,14 +381,15 @@ Position Helpers
 .pull-right {
   float: right; }
 
-.clear {
+.clear-float {
   clear: both; }
 
 /*
 Layer Helpers
 */
 .fix {
-  position: fixed; }
+  position: fixed;
+  overflow: auto; }
 
 .layer-0 {
   z-index: 0; }
@@ -525,6 +526,16 @@ Text Helpers
 /*
 Gap Helpers
 */
+.clear-margin {
+  margin: 0; }
+
+.clear-padding {
+  padding: 0; }
+
+.clear-all {
+  margin: 0;
+  padding: 0; }
+
 .padding-1 {
   padding: 1rem; }
 
@@ -575,6 +586,18 @@ Gap Helpers
 .margin-l1t2 {
   margin-left: 1rem;
   margin-top: 2rem; }
+
+/*
+Border Helper
+*/
+.white-bd {
+  border: 1px solid #f5f5f5; }
+
+.white-bd-l {
+  border: 1px solid white; }
+
+.white-bd-d {
+  border: 1px solid gainsboro; }
 
 * {
   box-sizing: border-box; }
@@ -666,17 +689,29 @@ Offset Grids
 .push-1of3 {
   margin-left: 33.33333%; }
 
+.push-2of3 {
+  margin-left: 66.66667%; }
+
 .push-1of4 {
   margin-left: 25%; }
 
+.push-3of4 {
+  margin-left: 75%; }
+
 .push-1of2 {
-  margin-left: 100% / 2; }
+  margin-left: 50%; }
 
 .push-1of5 {
   margin-left: 20%; }
 
 .push-2of5 {
   margin-left: 40%; }
+
+.push-3of5 {
+  margin-left: 60%; }
+
+.push-4of5 {
+  margin-left: 80%; }
 
 /*
 General Elements

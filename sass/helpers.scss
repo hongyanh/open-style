@@ -22,7 +22,7 @@ Position Helpers
   float: right;
 }
 
-.clear {
+.clear-float {
   clear: both;
 }
 
@@ -32,6 +32,7 @@ Layer Helpers
 
 .fix {
   position: fixed;
+  overflow: auto;
 }
 
 .layer-0 {
@@ -209,6 +210,19 @@ Text Helpers
 Gap Helpers
 */
 
+.clear-margin {
+  margin: 0;
+}
+
+.clear-padding {
+  padding: 0;
+}
+
+.clear-all {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin margin-lr($gap) {
   margin-left: $gap;
   margin-right: $gap;
@@ -279,4 +293,19 @@ Gap Helpers
 .margin-l1t2 {
   margin-left: $size-r1;
   margin-top: $size-r2;
+}
+
+/*
+Border Helper
+*/
+.white-bd {
+  border: $border-base solid $white-base;
+}
+
+.white-bd-l {
+  border: $border-base solid $white-light;
+}
+
+.white-bd-d {
+  border: $border-base solid $white-dark;
 }
