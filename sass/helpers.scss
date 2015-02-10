@@ -232,6 +232,10 @@ Gap Helpers
   padding: $size-r1;
 }
 
+.padding-t1 {
+  padding-top: $size-r1;
+}
+
 .padding-l1 {
   padding-left: $size-r1;
 }
@@ -240,13 +244,38 @@ Gap Helpers
   padding-right: $size-r1;
 }
 
+.padding-b1 {
+  padding-bottom: $size-r1;
+}
+
 .padding-l1r1 {
   padding-left: $size-r1;
   padding-right: $size-r1;
 }
 
+.padding-t1b1 {
+  padding-top: $size-r1;
+  padding-bottom: $size-r1;
+}
+
 .padding-l2 {
   padding-left: $size-r2;
+}
+
+.padding-r2 {
+  padding-right: $size-r2;
+}
+
+.padding-t2 {
+  padding-top: $size-r2;
+}
+
+.padding-b2 {
+  padding-bottom: $size-r2;
+}
+
+.margin-1 {
+  margin: $size-r1;
 }
 
 .margin-t1 {
@@ -285,9 +314,41 @@ Gap Helpers
   margin-left: $size-r3;
 }
 
+.margin-r1 {
+  margin-right: $size-r1;
+}
+
+.margin-r2 {
+  margin-right: $size-r2;
+}
+
+.margin-r3 {
+  margin-right: $size-r3;
+}
+
 .margin-l1t1 {
   margin-left: $size-r1;
   margin-top: $size-r1;
+}
+
+.margin-t1b1 {
+  margin-top: $size-r1;
+  margin-bottom: $size-r1;
+}
+
+.margin-t1r1 {
+  margin-top: $size-r1;
+  margin-right: $size-r1;
+}
+
+.margin-r1b1 {
+  margin-right: $size-r1;
+  margin-bottom: $size-r1;
+}
+
+.margin-l1r1 {
+  margin-left: $size-r1;
+  margin-right: $size-r1;
 }
 
 .margin-l1t2 {
@@ -308,4 +369,16 @@ Border Helper
 
 .white-bd-d {
   border: $border-base solid $white-dark;
+}
+
+.black-bd {
+  border: $border-base solid $black-base;
+}
+
+.black-bd-l {
+  border: $border-base solid $black-light;
+}
+
+.black-bd-d {
+  border: $border-base solid $black-dark;
 }

@@ -539,18 +539,40 @@ Gap Helpers
 .padding-1 {
   padding: 1rem; }
 
+.padding-t1 {
+  padding-top: 1rem; }
+
 .padding-l1 {
   padding-left: 1rem; }
 
 .padding-r1 {
   padding-right: 1rem; }
 
+.padding-b1 {
+  padding-bottom: 1rem; }
+
 .padding-l1r1 {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+.padding-t1b1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
 .padding-l2 {
   padding-left: 2rem; }
+
+.padding-r2 {
+  padding-right: 2rem; }
+
+.padding-t2 {
+  padding-top: 2rem; }
+
+.padding-b2 {
+  padding-bottom: 2rem; }
+
+.margin-1 {
+  margin: 1rem; }
 
 .margin-t1 {
   margin-top: 1rem; }
@@ -579,9 +601,34 @@ Gap Helpers
 .margin-l3 {
   margin-left: 3rem; }
 
+.margin-r1 {
+  margin-right: 1rem; }
+
+.margin-r2 {
+  margin-right: 2rem; }
+
+.margin-r3 {
+  margin-right: 3rem; }
+
 .margin-l1t1 {
   margin-left: 1rem;
   margin-top: 1rem; }
+
+.margin-t1b1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.margin-t1r1 {
+  margin-top: 1rem;
+  margin-right: 1rem; }
+
+.margin-r1b1 {
+  margin-right: 1rem;
+  margin-bottom: 1rem; }
+
+.margin-l1r1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
 .margin-l1t2 {
   margin-left: 1rem;
@@ -598,6 +645,15 @@ Border Helper
 
 .white-bd-d {
   border: 1px solid gainsboro; }
+
+.black-bd {
+  border: 1px solid #222; }
+
+.black-bd-l {
+  border: 1px solid #3c3c3c; }
+
+.black-bd-d {
+  border: 1px solid #090909; }
 
 * {
   box-sizing: border-box; }
@@ -719,9 +775,10 @@ General Elements
 html, body {
   font-family: "Open Sans", sans-serif;
   height: 100%;
-  color: #3c3c3c; }
+  color: #3c3c3c;
+  font-size: 14px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-weight: 400; }
 
 a {
@@ -734,6 +791,9 @@ a:hover {
 
 img {
   width: 100%; }
+
+h2 {
+  font-weight: 700; }
 
 /*
 List

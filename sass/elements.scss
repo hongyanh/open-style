@@ -6,9 +6,10 @@ html,body {
   font-family: $font;
   height: 100%;
   color: $black-light;
+  font-size: $font-size
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
   font-weight: $font-normal;
 }
 
@@ -24,6 +25,10 @@ a:hover {
 
 img {
   width: 100%;
+}
+
+h2 {
+  font-weight: $font-bold;
 }
 
 /*
