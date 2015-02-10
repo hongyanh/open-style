@@ -1,52 +1,4 @@
 /*
-General Elements
-*/
-
-html,body {
-  font-family: $font;
-  height: 100%;
-  color: $black-light;
-  font-size: $font-size
-}
-
-h1,h3,h4,h5,h6 {
-  font-weight: $font-normal;
-}
-
-a {
-  text-decoration: none;
-  color: $primary-base;
-  transition: background 0.5s ease;
-}
-
-a:hover {
-  color: $primary-light;
-}
-
-img {
-  width: 100%;
-}
-
-h2 {
-  font-weight: $font-bold;
-}
-
-textarea, input, button { outline: none; }
-
-/*
-List
-*/
-
-ul {
-  padding-left: $size-r1;
-}
-
-li {
-  margin-top: $size-r1;
-  margin-bottom: $size-r1;
-}
-
-/*
 Buttons
 */
 
@@ -120,7 +72,3 @@ input, textarea {
 input:focus, textarea:focus {
   @extend .primary-bd;
 }
-
-/*
-Table
-*/
