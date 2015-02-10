@@ -1,6 +1,6 @@
-.fix {
-  position: fixed;
-}
+/*
+Size Helpers
+*/
 
 .full-width {
   width: 100%;
@@ -9,6 +9,10 @@
 .full-height {
   height: 100%;
 }
+
+/*
+Position Helpers
+*/
 
 .pull-left {
   float: left;
@@ -22,6 +26,14 @@
   clear: both;
 }
 
+/*
+Layer Helpers
+*/
+
+.fix {
+  position: fixed;
+}
+
 .layer-0 {
   z-index: 0;
 }
@@ -33,6 +45,10 @@
 .layer-2 {
   z-index: 2;
 }
+
+/*
+Background Helpers
+*/
 
 .pri-bg {
   background-color: $primary-base;
@@ -70,7 +86,6 @@
   background-color: $tertiary-dark;
 }
 
-
 .black-bg {
   background-color: $black-base;
 }
@@ -93,6 +108,22 @@
 
 .white-bg-d {
   background-color: $white-dark;
+}
+
+/*
+Text Helpers
+*/
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
 }
 
 .white-txt {
@@ -158,18 +189,6 @@
   color: $tertiary-dark;
 }
 
-.txt-center {
-  text-align: center;
-}
-
-.txt-left {
-  text-align: left;
-}
-
-.txt-right {
-  text-align: right;
-}
-
 .light {
   font-weight: $font-light;
 }
@@ -185,6 +204,10 @@
 .extra {
   font-weight: $font-extra;
 }
+
+/*
+Gap Helpers
+*/
 
 @mixin margin-lr($gap) {
   margin-left: $gap;

@@ -4,6 +4,10 @@
   float:left;
 }
 
+/*
+Basic Grids
+*/
+
 .col-1of3 {
   width: 100% / 3 * 1;
 }
@@ -40,6 +44,10 @@
 .col-4of5 {
   width: 100% / 5 * 4;
 }
+
+/*
+Gap Grids
+*/
 
 .col-1of3-g {
   width: 100% / 3 * 1 - $size-p1 * 2;
@@ -85,6 +93,10 @@
   width: 100% / 5 * 4 - $size-p1 * 2;
   @include margin-lr($size-p1);
 }
+
+/*
+Offset Grids
+*/
 
 .push-1of3 {
   margin-left: 100% / 3 * 1;
