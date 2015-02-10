@@ -42,6 +42,30 @@ Basic Grids
   width: 100% / 5 * 4;
 }
 
+.col-1of7 {
+  width: 100% / 7 * 1;
+}
+
+.col-2of7 {
+  width: 100% / 7 * 2;
+}
+
+.col-3of7 {
+  width: 100% / 7 * 3;
+}
+
+.col-4of7 {
+  width: 100% / 7 * 4;
+}
+
+.col-5of7 {
+  width: 100% / 7 * 5;
+}
+
+.col-6of7 {
+  width: 100% / 7 * 6;
+}
+
 /*
 Gap Grids
 */
@@ -91,6 +115,36 @@ Gap Grids
   @include margin-lr($size-p1);
 }
 
+.col-1of7-g {
+  width: 100% / 7 * 1 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-2of7-g {
+  width: 100% / 7 * 2 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-3of7-g {
+  width: 100% / 7 * 3 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-4of7-g {
+  width: 100% / 7 * 4 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-5of7-g {
+  width: 100% / 7 * 5 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
+.col-6of7-g {
+  width: 100% / 7 * 6 - $size-p1 * 2;
+  @include margin-lr($size-p1);
+}
+
 /*
 Offset Grids
 */
@@ -129,4 +183,28 @@ Offset Grids
 
 .push-4of5 {
   margin-left: 100% / 5 * 4;
+}
+
+.push-1of7 {
+  margin-left: 100% / 7 * 1;
+}
+
+.push-2of7 {
+  margin-left: 100% / 7 * 2;
+}
+
+.push-3of7 {
+  margin-left: 100% / 7 * 3;
+}
+
+.push-4of7 {
+  margin-left: 100% / 7 * 4;
+}
+
+.push-5of7 {
+  margin-left: 100% / 7 * 5;
+}
+
+.push-6of7 {
+  margin-left: 100% / 7 * 6;
 }

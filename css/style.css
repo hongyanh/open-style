@@ -391,6 +391,24 @@ Basic Grids
 .col-4of5 {
   width: 80%; }
 
+.col-1of7 {
+  width: 14.28571%; }
+
+.col-2of7 {
+  width: 28.57143%; }
+
+.col-3of7 {
+  width: 42.85714%; }
+
+.col-4of7 {
+  width: 57.14286%; }
+
+.col-5of7 {
+  width: 71.42857%; }
+
+.col-6of7 {
+  width: 85.71429%; }
+
 /*
 Gap Grids
 */
@@ -439,6 +457,36 @@ Gap Grids
   margin-left: 1%;
   margin-right: 1%; }
 
+.col-1of7-g {
+  width: 12.28571%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col-2of7-g {
+  width: 26.57143%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col-3of7-g {
+  width: 40.85714%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col-4of7-g {
+  width: 55.14286%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col-5of7-g {
+  width: 69.42857%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col-6of7-g {
+  width: 83.71429%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
 /*
 Offset Grids
 */
@@ -468,6 +516,24 @@ Offset Grids
 
 .push-4of5 {
   margin-left: 80%; }
+
+.push-1of7 {
+  margin-left: 14.28571%; }
+
+.push-2of7 {
+  margin-left: 28.57143%; }
+
+.push-3of7 {
+  margin-left: 42.85714%; }
+
+.push-4of7 {
+  margin-left: 57.14286%; }
+
+.push-5of7 {
+  margin-left: 71.42857%; }
+
+.push-6of7 {
+  margin-left: 85.71429%; }
 
 /*
 Buttons
