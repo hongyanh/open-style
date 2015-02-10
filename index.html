@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="provide, up, to, ten, keywords, here">
-  <meta name="description" content="put your web description here for seo purpose">
+  <meta name="keywords" content="css, sass, style, grid, flat, website, design">
+  <meta name="description" content="A lightweight starter kit for website styling, avaliable in css and sass.">
   <meta name="author" content="Yan Hong">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -15,12 +15,13 @@
   <div class="col-1of5 white-bg full-height fix padding-l1">
     <h2>Menu</h2>
     <ul>
+      <li><a href="#install">Installation</a></li>
       <li><a href="#bg-color">Background Color</a></li>
       <li><a href="#txt-color">Text Color</a></li>
       <li><a href="#font">Font</a></li>
       <li><a href="#grid">Grid System</a></li>
       <li><a href="#position">Position Helpers</a></li>
-      <li><a href="#button">Button</a></li>
+      <li><a href="#button">Buttons</a></li>
       <li><a href="#form">Form</a></li>
       <li><a href="#components">Components</a></li>
     </ul>
@@ -31,6 +32,20 @@
     <a class="button-pri pull-right margin-t1r1" href="css/style.css" target="_blank" download>Download CSS</a>
     <div class="clear-float"></div>
     <hr>
+    <div class="padding-l1r1">
+      <h2 class="bold" id="install">&#9679; Installation</h2>
+      <h3 class="bold">&#9679; CSS version</h3>
+      <p>1. <a href="css/normalize.css" target="_blank" download>Download</a> the normalize.css, put it in your /css folder and reference in your html:</p>
+      <code>&lt;link rel="stylesheet" type="text/css" href="css/normalize.css"&gt;</code>
+      <p>2. <a href="css/style.css" target="_blank" download>Download</a> the all-in-one css version, put it in your /css folder and reference in your html:</p>
+      <code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code>
+      <h3 class="bold">&#9679; SASS version</h3>
+      <p>1. Go to the <a href="https://github.com/hongyanh/open-style.git" target="_blank">github repository</a> and download the source code;</p>
+      <p>2. In the /sass/main.scss file, comment out the style you do not need (you have to keep variables and helpers);</p>
+      <p>3. In the /sass/variables.scss file, change the variables to your own design such as color, font size, border radius, etc.</p>
+      <p>4. Install SASS and compile /sass/main.scss into style.css</p>
+      <p>5. Enjoy your style!</p>
+    </div>
     <div class="padding-l1r1">
       <h2 class="bold" id="bg-color">&#9679; Background Color</h2>
       <div class="col-1of3 pri-bg-l white-txt padding-1">.pri-bg-l</div>
@@ -194,40 +209,40 @@
     </div>
     <div class="clear-float"></div>
     <div class="padding-l1r1">
-      <h2 class="bold" id="button">&#9679; Button</h2>
+      <h2 class="bold" id="button">&#9679; Buttons</h2>
       <div class="margin-b1">
-      <button>.button</button>
-      <button class="button-pri">.button-pri</button>
-      <button class="button-sec">.button-sec</button>
-      <button class="button-ter">.button-ter</button>
+        <button>.button</button>
+        <button class="button-pri">.button-pri</button>
+        <button class="button-sec">.button-sec</button>
+        <button class="button-ter">.button-ter</button>
       </div>
       <div class="margin-b1">
-      <button class="button-pri shadow">.button-pri .shadow</button>
-      <button class="button-sec shadow">.button-sec .shadow</button>
-      <button class="button-ter shadow">.button-ter .shadow</button>
+        <button class="button-pri shadow">.button-pri .shadow</button>
+        <button class="button-sec shadow">.button-sec .shadow</button>
+        <button class="button-ter shadow">.button-ter .shadow</button>
       </div>
       <div class="margin-b1">
-      <button class="square">.button .square</button>
-      <button class="button-pri square">.button-pri .square</button>
-      <button class="button-sec square">.button-sec .square</button>
-      <button class="button-ter square">.button-ter .square</button>
+        <button class="square">.button .square</button>
+        <button class="button-pri square">.button-pri .square</button>
+        <button class="button-sec square">.button-sec .square</button>
+        <button class="button-ter square">.button-ter .square</button>
       </div>
       <div class="margin-b1">
-      <button class="button-pri square shadow">.button-pri .square .shadow</button>
-      <button class="button-sec square shadow">.button-sec .square .shadow</button>
-      <button class="button-ter square shadow">.button-ter .square .shadow</button>
+        <button class="button-pri square shadow">.button-pri .square .shadow</button>
+        <button class="button-sec square shadow">.button-sec .square .shadow</button>
+        <button class="button-ter square shadow">.button-ter .square .shadow</button>
       </div>
     </div>
     <div class="clear-float"></div>
     <div class="padding-l1r1">
       <h2 class="bold" id="form">&#9679; Form</h2>
       <div class="col-1of2">
-      <input type="text" value="input">
-      <input class="square" type="text" value="input .square">
-      <div class="clear-float"></div>
-      <textarea class="margin-t1" cols="45" rows="5">textarea</textarea>
-      <div class="clear-float"></div>
-      <textarea class="margin-t1 square" cols="45" rows="5">textarea .square</textarea>
+        <input type="text" value="input">
+        <input class="square" type="text" value="input .square">
+        <div class="clear-float"></div>
+        <textarea class="margin-t1" cols="45" rows="5">textarea</textarea>
+        <div class="clear-float"></div>
+        <textarea class="margin-t1 square" cols="45" rows="5">textarea .square</textarea>
       </div>
       <div class="col-1of2">
         <h3>Code without extra class</h3>
@@ -280,17 +295,17 @@
             <div class="txt-center cover">
               <div class="center-v">
                 <code class="white-txt-d">&lt;div class="full-width height-40 bg-video"&gt;<br>
-                        &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;<br>
-                          &lt;source src="videos/bg.webm" type="video/webm"&gt;<br>
-                            &lt;source src="videos/bg.mp4" type="video/mp4"&gt;<br>
-                            &lt;/video&gt;<br>
-                            &lt;div class="txt-center cover"&gt;<br>
-                              &lt;div class="center-v"&gt;<br>
-                                &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
-                              &lt;/div&gt;<br>
-                            &lt;/div&gt;<br>
-                          &lt;/div&gt;<br>
-                          </code>
+                  &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;<br>
+                  &lt;source src="videos/bg.webm" type="video/webm"&gt;<br>
+                  &lt;source src="videos/bg.mp4" type="video/mp4"&gt;<br>
+                  &lt;/video&gt;<br>
+                  &lt;div class="txt-center cover"&gt;<br>
+                  &lt;div class="center-v"&gt;<br>
+                  &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+                </code>
               </div>
             </div>
           </div>
@@ -350,11 +365,11 @@
             <div class="clear-float"></div>
           </nav>
           <div class="col-1of5-g">
-          <h3>.circle</h3>
+            <h3>.circle</h3>
             <img class="circle" src="images/profile.png" alt="">
           </div>
           <div class="col-1of5-g">
-          <h3>.round</h3>
+            <h3>.round</h3>
             <img class="round" src="images/profile.png" alt="">
           </div>
         </div>
