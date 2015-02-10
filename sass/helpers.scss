@@ -1,262 +1,191 @@
-/*
-General Elements
-*/
-
+/* General Elements */
 * { box-sizing: border-box }
-
 html,body {
   font-family: $font;
   height: 100%;
   color: $black-light;
   font-size: $font-size
 }
-
 h1,h3,h4,h5,h6 {
   font-weight: $font-normal;
 }
-
 a {
   text-decoration: none;
   color: $primary-base;
   transition: background 0.5s ease;
 }
-
 a:hover {
   color: $primary-light;
 }
-
 img {
   width: 100%;
 }
-
 h2 {
   font-weight: $font-bold;
 }
-
 textarea, input, button { outline: none; }
 
-/*
-List
-*/
-
+/* List */
 ul {
   padding-left: $size-r1;
 }
-
 li {
   margin-top: $size-r1;
   margin-bottom: $size-r1;
 }
 
-/*
-Size Helpers
-*/
-
+/* Size Helpers */
 .full-width {
   width: 100%;
 }
-
 .full-height {
   height: 100%;
 }
-
 .full-size {
   width: 100%;
   height: 100%;
 }
-
 .min-height-10 {
   min-height: $size-r1 * 10;
 }
-
 .height-20 {
   height: $size-r1 * 20;
 }
-
 .height-40 {
   height: $size-r1 * 40;
 }
 
-/*
-Position Helpers
-*/
-
+/* Position Helpers */
 .pull-left {
   float: left;
 }
-
 .pull-right {
   float: right;
 }
-
 .clear-float {
   clear: both;
 }
 
-/*
-Layer Helpers
-*/
-
+/* Layer Helpers */
 .fix {
   position: fixed;
   overflow: auto;
 }
-
 .layer-0 {
   z-index: 0;
 }
-
 .layer-1 {
   z-index: 1;
 }
-
 .layer-2 {
   z-index: 2;
 }
 
-/*
-Background Helpers
-*/
-
+/* Background Helpers */
 .pri-bg {
   background-color: $primary-base;
 }
-
 .pri-bg-l {
   background-color: $primary-light;
 }
-
 .pri-bg-d {
   background-color: $primary-dark;
 }
-
 .sec-bg {
   background-color: $secondary-base;
 }
-
 .sec-bg-l {
   background-color: $secondary-light;
 }
-
 .sec-bg-d {
   background-color: $secondary-dark;
 }
-
 .ter-bg {
   background-color: $tertiary-base;
 }
-
 .ter-bg-l {
   background-color: $tertiary-light;
 }
-
 .ter-bg-d {
   background-color: $tertiary-dark;
 }
-
 .black-bg {
   background-color: $black-base;
 }
-
 .black-bg-l {
   background-color: $black-light;
 }
-
 .black-bg-d {
   background-color: $black-dark;
 }
-
 .white-bg {
   background-color: $white-base;
 }
-
 .white-bg-l {
   background-color: $white-light;
 }
-
 .white-bg-d {
   background-color: $white-dark;
 }
 
-/*
-Text Helpers
-*/
-
+/* Text Helpers */
 .txt-center {
   text-align: center;
 }
-
 .txt-left {
   text-align: left;
 }
-
 .txt-right {
   text-align: right;
 }
-
 .white-txt {
   color: $white-base;
   font-weight: $font-light;
 }
-
 .white-txt-l {
   color: $white-light;
   font-weight: $font-light;
 }
-
 .white-txt-d {
   color: $white-dark;
   font-weight: $font-light;
 }
-
 .black-txt {
   color: $black-base;
 }
-
 .black-txt-l {
   color: $black-light;
 }
-
 .black-txt-d {
   color: $black-dark;
 }
-
 .pri-txt {
   color: $primary-base;
 }
-
 .pri-txt-l {
   color: $primary-light;
 }
-
 .pri-txt-d {
   color: $primary-dark;
 }
-
 .sec-txt {
   color: $secondary-base;
 }
-
 .sec-txt-l {
   color: $secondary-light;
 }
-
 .sec-txt-d {
   color: $secondary-dark;
 }
-
 .ter-txt {
   color: $tertiary-base;
 }
-
 .ter-txt-l {
   color: $tertiary-light;
 }
-
 .ter-txt-d {
   color: $tertiary-dark;
 }
-
 .light {
   font-weight: $font-light;
 }
@@ -273,195 +202,148 @@ Text Helpers
   font-weight: $font-extra;
 }
 
-/*
-Gap Helpers
-*/
-
+/* Gap Helpers */
 .clear-margin {
   margin: 0;
 }
-
 .clear-padding {
   padding: 0;
 }
-
 .clear-all {
   margin: 0;
   padding: 0;
 }
-
 @mixin margin-lr($gap) {
   margin-left: $gap;
   margin-right: $gap;
 }
-
 .padding-1 {
   padding: $size-r1;
 }
-
 .padding-t1 {
   padding-top: $size-r1;
 }
-
 .padding-l1 {
   padding-left: $size-r1;
 }
-
 .padding-r1 {
   padding-right: $size-r1;
 }
-
 .padding-b1 {
   padding-bottom: $size-r1;
 }
-
 .padding-l1r1 {
   padding-left: $size-r1;
   padding-right: $size-r1;
 }
-
 .padding-t1b1 {
   padding-top: $size-r1;
   padding-bottom: $size-r1;
 }
-
 .padding-l2 {
   padding-left: $size-r2;
 }
-
 .padding-r2 {
   padding-right: $size-r2;
 }
-
 .padding-t2 {
   padding-top: $size-r2;
 }
-
 .padding-b2 {
   padding-bottom: $size-r2;
 }
-
 .margin-1 {
   margin: $size-r1;
 }
-
 .margin-t1 {
   margin-top: $size-r1;
 }
-
 .margin-t2 {
   margin-top: $size-r2;
 }
-
 .margin-t3 {
   margin-top: $size-r3;
 }
-
 .margin-b1 {
   margin-bottom: $size-r1;
 }
-
 .margin-b2 {
   margin-bottom: $size-r2;
 }
-
 .margin-b3 {
   margin-bottom: $size-r3;
 }
-
 .margin-l1 {
   margin-left: $size-r1;
 }
-
 .margin-l2 {
   margin-left: $size-r2;
 }
-
 .margin-l3 {
   margin-left: $size-r3;
 }
-
 .margin-r1 {
   margin-right: $size-r1;
 }
-
 .margin-r2 {
   margin-right: $size-r2;
 }
-
 .margin-r3 {
   margin-right: $size-r3;
 }
-
 .margin-l1t1 {
   margin-left: $size-r1;
   margin-top: $size-r1;
 }
-
 .margin-t1b1 {
   margin-top: $size-r1;
   margin-bottom: $size-r1;
 }
-
 .margin-t1r1 {
   margin-top: $size-r1;
   margin-right: $size-r1;
 }
-
 .margin-r1b1 {
   margin-right: $size-r1;
   margin-bottom: $size-r1;
 }
-
 .margin-l1r1 {
   margin-left: $size-r1;
   margin-right: $size-r1;
 }
-
 .margin-l1t2 {
   margin-left: $size-r1;
   margin-top: $size-r2;
 }
 
-/*
-Border Helper
-*/
+/* Border Helper */
 .white-bd {
   border: $border-base solid $white-base;
 }
-
 .white-bd-l {
   border: $border-base solid $white-light;
 }
-
 .white-bd-d {
   border: $border-base solid $white-dark;
 }
-
 .black-bd {
   border: $border-base solid $black-base;
 }
-
 .black-bd-l {
   border: $border-base solid $black-light;
 }
-
 .black-bd-d {
   border: $border-base solid $black-dark;
 }
-
 .primary-bd {
   border: $border-base solid $primary-base;
 }
-
 .primary-bd-l {
   border: $border-base solid $primary-light;
 }
-
 .primary-bd-d {
   border: $border-base solid $primary-dark;
 }
-
 .shadow-lb {
   box-shadow: -1px 2px 12px -3px $black-light;
 }

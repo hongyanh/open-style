@@ -1,4 +1,4 @@
-# front-end-starter
+# Open Style
 A starter kit for front end styling, enjoy it!
 
 ## CSS

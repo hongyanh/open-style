@@ -1,7 +1,4 @@
-/*
-Buttons
-*/
-
+/* Buttons */
 button, .button {
   color: $white-base;
   background: $black-base;
@@ -11,64 +8,51 @@ button, .button {
   padding: $size-r1;
   transition: background 0.5s ease;
 }
-
-button:hover, .button:hover {
+button:hover, .button:hover, a.button:hover {
+  @extend .button;
   background: $black-light;
-  box-shadow: inset 0 -4px 0 $black-base;
 }
-
 .button-pri {
   @extend .button;
   background: $primary-base;
   box-shadow: inset 0 -4px 0 $primary-dark;
 }
-
-.button-pri:hover {
+.button-pri:hover, a.button-pri:hover {
+  @extend .button-pri;
   background: $primary-light;
-  box-shadow: inset 0 -4px 0 $primary-base;
 }
-
 .button-sec {
   @extend .button;
   background: $secondary-base;
   box-shadow: inset 0 -4px 0 $secondary-dark;
 }
-
-.button-sec:hover {
+.button-sec:hover, a.button-sec:hover {
+  @extend .button-sec;
   background: $secondary-light;
-  box-shadow: inset 0 -4px 0 $secondary-base;
 }
-
 .button-ter {
   @extend .button;
   background: $tertiary-base;
   box-shadow: inset 0 -4px 0 $tertiary-dark;
 }
-
-.button-ter:hover {
+.button-ter:hover, a.button-ter:hover {
+  @extend .button-ter;
   background: $tertiary-light;
-  box-shadow: inset 0 -4px 0 $tertiary-base;
 }
-
-.square {
+.square, .square:hover {
   border-radius: 0;
 }
-
-.round {
+.round, .round:hover {
   border-radius: $radius-base;
 }
 
-/*
-Forms
-*/
-
+/* Forms */
 input, textarea {
   @extend .white-bd-d;
   border-radius: $radius-base;
   padding: $size-r1;
   transition: border 0.5s ease;
 }
-
 input:focus, textarea:focus {
   @extend .primary-bd;
 }

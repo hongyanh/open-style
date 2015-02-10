@@ -9,7 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Front End Starter | Style Guide</title>
+  <title>Open Style | Another CSS starting point</title>
 </head>
 <body>
   <div class="col-1of5 white-bg full-height fix padding-l1">
@@ -20,17 +20,16 @@
       <li><a href="#font">Font</a></li>
       <li><a href="#grid">Grid System</a></li>
       <li><a href="#position">Position Helpers</a></li>
-      <li><a href="#gap">Gap Helpers</a></li>
       <li><a href="#button">Button</a></li>
       <li><a href="#form">Form</a></li>
-      <li><a href="#list">List</a></li>
-      <li><a href="#table">Table</a></li>
-      <li><a href="#responsive">Responsive</a></li>
       <li><a href="#components">Components</a></li>
     </ul>
   </div>
   <div class="col-4of5 push-1of5 shadow-l">
-    <h1 class="txt-center light">Front-end Starter | Style Guide v0.1</h1>
+    <h1 class="margin-l1 light pull-left">Open Style Documentation</h1>
+    <a class="button-sec pull-right margin-t1r1" href="https://github.com/hongyanh/open-style.git" target="_blank">GitHub Source</a>
+    <a class="button-pri pull-right margin-t1r1" href="css/style.css" target="_blank" download>Download CSS</a>
+    <div class="clear-float"></div>
     <hr>
     <div class="padding-l1r1">
       <h2 class="bold" id="bg-color">&#9679; Background Color</h2>
@@ -96,7 +95,7 @@
       <h2 class="bold" id="grid">&#9679; Grid System</h2>
       <p>* Note1: add .clear-float if you want to start with a new line.</p>
       <p>* Note2: you can nest the grid system and get more column types.</p>
-      <div class="full-width padding-1 white-bg-d white-bd">.full-width</div>
+      <div class="col-1of1 padding-1 white-bg-d white-bd">.col-1of1</div>
       <div class="col-1of2 padding-1 white-bg-d white-bd">.col-1of2</div>
       <div class="col-1of2 padding-1 white-bg-d white-bd">.col-1of2</div>
       <div class="col-1of3 padding-1 white-bg-d white-bd">.col-1of3</div>
@@ -136,7 +135,7 @@
       <div class="col-1of7 push-4of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-4of7</div>
       <div class="col-1of7 push-5of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-5of7</div>
       <div class="col-1of7 push-6of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-6of7</div>
-
+      <div class="col-1of1-g padding-1 white-bg-d white-bd">.col-1of1-g</div>
       <div class="col-1of2-g padding-1 white-bg-d white-bd">.col-1of2-g</div>
       <div class="col-1of2-g padding-1 white-bg-d white-bd">.col-1of2-g</div>
       <div class="col-1of3-g padding-1 white-bg-d white-bd">.col-1of3-g</div>
@@ -167,10 +166,7 @@
       <h2 class="bold" id="position">&#9679; Position Helpers</h2>
       <h3 class="pull-left white-bg-d padding-1">.pull-left</h3>
       <h3 class="pull-right white-bg-d padding-1">.pull-right</h3>
-    </div>
-    <div class="clear-float"></div>
-    <div class="padding-l1r1">
-      <h2 class="bold" id="gap">&#9679; Gap Helpers</h2>
+      <div class="clear-float"></div>
       <div class="black-bd-l">
         <h3 class="clear-all white-bg-d">.clear-all</h3>
       </div>
@@ -211,27 +207,24 @@
     <div class="clear-float"></div>
     <div class="padding-l1r1">
       <h2 class="bold" id="form">&#9679; Form</h2>
+      <div class="col-1of2">
       <input type="text" value="input">
       <input class="square" type="text" value="input .square">
       <div class="clear-float"></div>
       <textarea class="margin-t1" cols="45" rows="5">textarea</textarea>
       <div class="clear-float"></div>
       <textarea class="margin-t1 square" cols="45" rows="5">textarea .square</textarea>
-    </div>
-    <div class="clear-float"></div>
-    <div class="padding-l1r1">
-      <h2 class="bold" id="list">&#9679; List</h2>
-      <p>Coming soon...</p>
-    </div>
-    <div class="clear-float"></div>
-    <div class="padding-l1r1">
-      <h2 class="bold" id="table">&#9679; Table</h2>
-      <p>Coming soon...</p>
-    </div>
-    <div class="clear-float"></div>
-    <div class="padding-l1r1">
-      <h2 class="bold" id="responsive">&#9679; Responsive</h2>
-      <p>Coming soon...</p>
+      </div>
+      <div class="col-1of2">
+        <h3>Code without extra class</h3>
+        <code>&lt;input type="text" value="input"&gt;</code>
+        <h3>Use .square for hard corners</h3>
+        <code>&lt;input class="square" type="text" value="input .square"&gt;</code>
+        <h3>Text area is easy too</h3>
+        <code>&lt;textarea cols="45" rows="5"&gt;&lt;/textarea&gt;</code>
+        <h3>Use .square for hard corners</h3>
+        <code>&lt;textarea class="square" cols="45" rows="5"&gt;&lt;/textarea&gt;</code>
+      </div>
     </div>
     <div class="clear-float"></div>
     <div class="padding-l1r1">
@@ -246,6 +239,7 @@
       <h3>.bg-img</h3>
       <div class="full-width height-20 bg-img">
       </div>
+      <h3>.cover</h3>
       <div class="full-width height-20 bg-img margin-t1">
         <div class="txt-center cover">
           <div class="center-v">
@@ -259,25 +253,26 @@
       </div>
       <h3>.bg-video</h3>
       <div class="full-width height-40 bg-video">
-      <video autoplay loop muted poster="images/bg.jpg" id="bgvid">
-        <source src="videos/bg.webm" type="video/webm">
-        <source src="videos/bg.mp4" type="video/mp4">
-      </video>
-        <div class="txt-center cover">
-          <div class="center-v">
-            <h1 class="white-txt-d">Hello Hackers!</h1>
-            <h2 class="white-txt-d">Check my code to use this effect.</h2>
+        <video autoplay loop muted poster="images/bg.jpg" id="bgvid">
+          <source src="videos/bg.webm" type="video/webm">
+            <source src="videos/bg.mp4" type="video/mp4">
+            </video>
+            <div class="txt-center cover">
+              <div class="center-v">
+                <h1 class="white-txt-d">Hello Hackers!</h1>
+                <h2 class="white-txt-d">Check my code to use this effect.</h2>
+              </div>
+            </div>
           </div>
+          <h3>.flash</h3>
+          <div class="full-width"></div>
+          <h3>.nav-bar</h3>
+          <h3>.circle</h3>
+          <h3>.round</h3>
         </div>
+        <div class="clear-float"></div>
+        <hr>
+        <p class="txt-center light black-txt-l">Created by <a href="http://onlyhongyan.com" target="_blank">Yan Hong</a>, 2015</p>
       </div>
-      <h3>.flash</h3>
-      <h3>.nav-bar</h3>
-      <h3>.circle</h3>
-      <h3>.round</h3>
-    </div>
-    <div class="clear-float"></div>
-    <hr>
-    <p class="txt-center light black-txt-l">Created by <a href="http://onlyhongyan.com" target="_blank">Yan Hong</a>, 2015</p>
-  </div>
-</body>
-</html>
+    </body>
+    </html>
