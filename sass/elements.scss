@@ -16,7 +16,7 @@ h1,h3,h4,h5,h6 {
 a {
   text-decoration: none;
   color: $primary-base;
-  transition: all 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 a:hover {
@@ -30,6 +30,8 @@ img {
 h2 {
   font-weight: $font-bold;
 }
+
+textarea, input, button { outline: none; }
 
 /*
 List
@@ -55,7 +57,7 @@ button, .button {
   border-radius: $radius-base;
   box-shadow: inset 0 -4px 0 $black-dark;
   padding: $size-r1;
-  transition: all 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 button:hover, .button:hover {
@@ -96,9 +98,28 @@ button:hover, .button:hover {
   box-shadow: inset 0 -4px 0 $tertiary-base;
 }
 
+.square {
+  border-radius: 0;
+}
+
+.round {
+  border-radius: $radius-base;
+}
+
 /*
 Forms
 */
+
+input, textarea {
+  @extend .white-bd-d;
+  border-radius: $radius-base;
+  padding: $size-r1;
+  transition: border-color 0.5s ease;
+}
+
+input:focus, textarea:focus {
+  @extend .primary-bd;
+}
 
 /*
 Table

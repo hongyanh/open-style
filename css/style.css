@@ -643,7 +643,7 @@ Border Helper
 .white-bd-l {
   border: 1px solid white; }
 
-.white-bd-d {
+.white-bd-d, input, textarea {
   border: 1px solid gainsboro; }
 
 .black-bd {
@@ -654,6 +654,15 @@ Border Helper
 
 .black-bd-d {
   border: 1px solid #090909; }
+
+.primary-bd, input:focus, textarea:focus {
+  border: 1px solid #f7941f; }
+
+.primary-bd-l {
+  border: 1px solid #f9ac50; }
+
+.primary-bd-d {
+  border: 1px solid #db7a08; }
 
 * {
   box-sizing: border-box; }
@@ -784,7 +793,7 @@ h1, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #f7941f;
-  transition: all 0.5s ease; }
+  transition: background 0.5s ease; }
 
 a:hover {
   color: #f9ac50; }
@@ -794,6 +803,9 @@ img {
 
 h2 {
   font-weight: 700; }
+
+textarea, input, button {
+  outline: none; }
 
 /*
 List
@@ -815,7 +827,7 @@ button, .button, .button-pri, .button-sec, .button-ter {
   border-radius: 5px;
   box-shadow: inset 0 -4px 0 #090909;
   padding: 1rem;
-  transition: all 0.5s ease; }
+  transition: background 0.5s ease; }
 
 button:hover, .button:hover, .button-pri:hover, .button-sec:hover, .button-ter:hover {
   background: #3c3c3c;
@@ -845,9 +857,20 @@ button:hover, .button:hover, .button-pri:hover, .button-sec:hover, .button-ter:h
   background: #068def;
   box-shadow: inset 0 -4px 0 #0570bd; }
 
+.square {
+  border-radius: 0; }
+
+.round {
+  border-radius: 5px; }
+
 /*
 Forms
 */
+input, textarea {
+  border-radius: 5px;
+  padding: 1rem;
+  transition: border-color 0.5s ease; }
+
 /*
 Table
 */

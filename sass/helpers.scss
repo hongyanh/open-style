@@ -382,3 +382,15 @@ Border Helper
 .black-bd-d {
   border: $border-base solid $black-dark;
 }
+
+.primary-bd {
+  border: $border-base solid $primary-base;
+}
+
+.primary-bd-l {
+  border: $border-base solid $primary-light;
+}
+
+.primary-bd-d {
+  border: $border-base solid $primary-dark;
+}
