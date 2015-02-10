@@ -2,7 +2,8 @@
 A starter kit for front end styling, enjoy it!
 
 ## CSS
-style.css is a ready to use (all-in-one) version
+normalize.css makes browsers render all elements more consistently and in line with modern standards
+style.css is a ready to use (all-in-one) version, if you want to use specific helpers, please use sass version
 
 ## SASS
 (comment out the one you do not need in main.scss)
