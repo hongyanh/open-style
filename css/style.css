@@ -534,7 +534,7 @@ Gap Helpers
 .padding-r1 {
   padding-right: 1rem; }
 
-.padding-lr1 {
+.padding-l1r1 {
   padding-left: 1rem;
   padding-right: 1rem; }
 
@@ -678,6 +678,9 @@ Offset Grids
 .push-2of5 {
   margin-left: 40%; }
 
+/*
+General Elements
+*/
 html, body {
   font-family: "Open Sans", sans-serif;
   height: 100%;
@@ -697,11 +700,61 @@ a:hover {
 img {
   width: 100%; }
 
+/*
+List
+*/
 ul {
   padding-left: 1rem; }
 
 li {
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+/*
+Buttons
+*/
+button, .button, .button-pri, .button-sec, .button-ter {
+  color: #f5f5f5;
+  background: #222;
+  border: 0px solid #090909;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 #090909;
+  padding: 1rem;
+  transition: all 0.5s ease; }
+
+button:hover, .button:hover, .button-pri:hover, .button-sec:hover, .button-ter:hover {
+  background: #3c3c3c;
+  box-shadow: inset 0 -4px 0 #222; }
+
+.button-pri {
+  background: #f7941f;
+  box-shadow: inset 0 -4px 0 #db7a08; }
+
+.button-pri:hover {
+  background: #f9ac50;
+  box-shadow: inset 0 -4px 0 #f7941f; }
+
+.button-sec {
+  background: #21b474;
+  box-shadow: inset 0 -4px 0 #198958; }
+
+.button-sec:hover {
+  background: #2fd98f;
+  box-shadow: inset 0 -4px 0 #21b474; }
+
+.button-ter {
+  background: #0570bd;
+  box-shadow: inset 0 -4px 0 #04538b; }
+
+.button-ter:hover {
+  background: #068def;
+  box-shadow: inset 0 -4px 0 #0570bd; }
+
+/*
+Forms
+*/
+/*
+Table
+*/
 
 /*# sourceMappingURL=style.css.map */
