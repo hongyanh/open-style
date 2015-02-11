@@ -591,14 +591,37 @@ input, textarea {
   padding: 1rem;
   transition: border 0.5s ease; }
 
-.bg-img-fix {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  background-size: cover; }
-
 .bg-img {
   background: url(../images/bg.jpg) no-repeat center center;
   background-size: cover;
   position: relative; }
+
+.bg-img-fix {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.bg-img-parallax {
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  transform: translateZ(-1px); }
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden; }
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.parallax__layer--base {
+  transform: translateZ(0); }
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2); }
 
 .cover {
   background-color: rgba(0, 0, 0, 0.6);
