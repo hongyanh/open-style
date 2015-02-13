@@ -638,10 +638,10 @@ nav > ul > li {
   margin: 1rem; }
 
 .pri-bg > ul > li > a, .sec-bg > ul > li > a, .ter-bg > ul > li > a {
-  color: #f5f5f5; }
+  color: white; }
 
 .pri-bg > ul > li > a:hover, .sec-bg > ul > li > a:hover, .ter-bg > ul > li > a:hover {
-  color: white; }
+  color: #f5f5f5; }
 
 .circle {
   border-radius: 50%; }

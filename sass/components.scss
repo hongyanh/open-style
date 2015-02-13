@@ -54,10 +54,10 @@ nav > ul > li {
   margin: $size-r1;
 }
 .pri-bg > ul > li > a,.sec-bg > ul > li > a,.ter-bg > ul > li > a {
-  color: $white-base;
+  color: $white-light;
 }
 .pri-bg > ul > li > a:hover,.sec-bg > ul > li > a:hover,.ter-bg > ul > li > a:hover {
-  color: $white-light;
+  color: $white-base;
 }
 .circle {
   border-radius: 50%;
