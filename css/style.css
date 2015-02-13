@@ -582,9 +582,6 @@ button:hover, .button:hover, button:hover, a.button:hover, .button-pri:hover, a.
 .square, .square:hover {
   border-radius: 0; }
 
-.round, .round:hover {
-  border-radius: 5px; }
-
 /* Forms */
 input, textarea {
   border-radius: 5px;
@@ -651,5 +648,15 @@ nav > ul > li {
 
 .round {
   border-radius: 1rem; }
+
+.dropdown {
+  cursor: pointer; }
+
+.dropdown > * {
+  display: none; }
+
+.dropdown:hover > * {
+  display: block;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

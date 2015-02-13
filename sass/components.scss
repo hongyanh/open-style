@@ -65,3 +65,13 @@ nav > ul > li {
 .round {
   border-radius: $size-r1;
 }
+.dropdown {
+  cursor: pointer;
+}
+.dropdown > * {
+  display: none;
+}
+.dropdown:hover > * {
+  display: block;
+  cursor: pointer;
+}
