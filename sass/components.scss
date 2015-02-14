@@ -67,11 +67,18 @@ nav > ul > li {
 }
 .dropdown {
   cursor: pointer;
+  position:relative;
+  padding: $size-r1;
 }
 .dropdown > * {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding-left: $size-r1;
+  padding-right: $size-r1;
   display: none;
 }
 .dropdown:hover > * {
   display: block;
-  cursor: pointer;
 }

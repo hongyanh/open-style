@@ -650,13 +650,20 @@ nav > ul > li {
   border-radius: 1rem; }
 
 .dropdown {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  padding: 1rem; }
 
 .dropdown > * {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: none; }
 
 .dropdown:hover > * {
-  display: block;
-  cursor: pointer; }
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
