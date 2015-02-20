@@ -1,5 +1,10 @@
 .card {
   @extend .shadow-lb;
+  margin: $size-r1;
+}
+.img-border {
+  @extend .white-bd-l;
+  border-width: 10px;
 }
 .bg-img-fix {
   background: url(../images/bg.jpg) no-repeat center center fixed; 
@@ -54,10 +59,10 @@ nav > ul > li {
   margin: $size-r1;
 }
 .pri-bg > ul > li > a,.sec-bg > ul > li > a,.ter-bg > ul > li > a {
-  color: $white-light;
+  color: $white-base;
 }
 .pri-bg > ul > li > a:hover,.sec-bg > ul > li > a:hover,.ter-bg > ul > li > a:hover {
-  color: $white-base;
+  color: $white-light;
 }
 .circle {
   border-radius: 50%;
@@ -65,20 +70,87 @@ nav > ul > li {
 .round {
   border-radius: $size-r1;
 }
+.nav-bar {
+  width: 100%;
+  box-shadow: 0px 2px 10px -5px rgba(100,100,100,.5);
+}
 .dropdown {
   cursor: pointer;
   position:relative;
-  padding: $size-r1;
+  float: left;
 }
-.dropdown > * {
+.dropdown > ul {
+  box-shadow: 0px 2px 10px -5px rgba(100,100,100,.5);
   cursor: pointer;
   position: absolute;
-  left: 0;
-  width: 100%;
-  padding-left: $size-r1;
-  padding-right: $size-r1;
+  right: 0;
+  padding-left: 0;
   display: none;
+  list-style-type: none;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 1;
 }
-.dropdown:hover > * {
+.dropdown > ul > li {
+  margin: 0;
+  padding: 0;
+}
+.dropdown:hover > ul {
   display: block;
+}
+
+.dropdown > ul > li > a {
+  color: $black-light;
+  padding: $size-r1 $size-r2;
+  display: block
+}
+
+.dropdown > ul > li > a:hover {
+  color: $black-base;
+}
+
+.dropdown:hover > ul > li:hover {
+  background-color: $white-base;
+  color: $black-base;
+}
+.pointer {
+  position: absolute;
+  border-style: solid;
+  border-width: 0 25px 15px;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 70px;
+}
+.content-break::before { 
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 25%;
+  margin-right: $size-r2;
+  background-color: $white-dark;
+}
+.content-break::after { 
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 25%;
+  margin-left: $size-r2;
+  background-color: $white-dark;
+}
+.arrow-up {
+  @include arrow-up($black-base, 10px);
+}
+.arrow-down {
+  @include arrow-down($black-base, 10px);
+}
+.arrow-left {
+  @include arrow-left($black-base, 10px);
+}
+.arrow-right {
+  @include arrow-right($black-base, 10px);
 }

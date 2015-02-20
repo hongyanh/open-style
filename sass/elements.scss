@@ -47,8 +47,20 @@ button:hover, .button:hover, a.button:hover {
   @extend .button-ter;
   background: $tertiary-light;
 }
+.wide,.wide:hover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .square, .square:hover {
   border-radius: 0;
+}
+button:disabled{
+  color: $white-base;
+  background: $grey-base;
+}
+button.clear {
+  background: none;
+  padding: 0;
 }
 
 /* Forms */
@@ -59,5 +71,35 @@ input, textarea {
   transition: border 0.5s ease;
 }
 input:focus, textarea:focus {
-  @extend .pri-bd;
+  @extend .grey-bd;
+}
+
+/* arrows */
+@mixin arrow-up($color, $size) {
+  width: 0; 
+  height: 0; 
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid $color;
+}
+@mixin arrow-down($color, $size) {
+  width: 0; 
+  height: 0; 
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+@mixin arrow-right($color, $size) {
+  width: 0; 
+  height: 0; 
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+@mixin arrow-left($color, $size) {
+  width: 0; 
+  height: 0; 
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent; 
+  border-right:$size solid $color;
 }

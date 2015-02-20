@@ -4,18 +4,55 @@ html,body {
   font-family: $font;
   height: 100%;
   color: $black-light;
-  font-size: $font-size
+  font-size: $font-size;
+  background-color: $background-color;
 }
 h1,h3,h4,h5,h6 {
   font-weight: $font-normal;
 }
+h1 {
+  font-size: $h1-size;
+}
+h2 {
+  font-size: $h2-size;
+}
 a {
   text-decoration: none;
-  color: $primary-base;
+  color: $link-color;
   transition: background 0.5s ease;
 }
 a:hover {
-  color: $primary-light;
+  color: $link-color-hover;
+}
+a.white-txt:hover {
+  color: $white-dark;
+}
+a.black-txt:hover {
+  color: $black-dark;
+}
+a.pri-txt:hover {
+  color: $primary-dark;
+}
+a.sec-txt:hover {
+  color: $secondary-dark;
+}
+a.ter-txt:hover {
+  color: $tertiary-dark;
+}
+a.white-txt-l:hover {
+  color: $white-base;
+}
+a.black-txt-l:hover {
+  color: $black-base;
+}
+a.pri-txt-l:hover {
+  color: $primary-base;
+}
+a.sec-txt-l:hover {
+  color: $secondary-base;
+}
+a.ter-txt-l:hover {
+  color: $tertiary-base;
 }
 img {
   width: 100%;
@@ -24,6 +61,9 @@ h2 {
   font-weight: $font-bold;
 }
 textarea, input, button { outline: none; }
+strong {
+  font-weight: $font-semi;
+}
 
 /* List */
 ul {
@@ -51,8 +91,17 @@ li {
 .height-20 {
   height: $size-r1 * 20;
 }
+.height-30 {
+  height: $size-r1 * 30;
+}
 .height-40 {
   height: $size-r1 * 40;
+}
+.container {
+  max-width: $container-size;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 }
 
 /* Position Helpers */
@@ -65,11 +114,20 @@ li {
 .clear-float {
   clear: both;
 }
+.inline {
+  display: inline-block;
+}
+.middle {
+  vertical-align: middle;
+}
 
 /* Layer Helpers */
 .fix {
   position: fixed;
   overflow: auto;
+}
+.absolute {
+  position: absolute;
 }
 .layer-0 {
   z-index: 0;
@@ -83,39 +141,51 @@ li {
 
 /* Background Helpers */
 .pri-bg {
+  @extend .white-txt;
   background-color: $primary-base;
 }
 .pri-bg-l {
+  @extend .white-txt;
   background-color: $primary-light;
 }
 .pri-bg-d {
+  @extend .white-txt;
   background-color: $primary-dark;
 }
 .sec-bg {
+  @extend .white-txt;
   background-color: $secondary-base;
 }
 .sec-bg-l {
+  @extend .white-txt;
   background-color: $secondary-light;
 }
 .sec-bg-d {
+  @extend .white-txt;
   background-color: $secondary-dark;
 }
 .ter-bg {
+  @extend .white-txt;
   background-color: $tertiary-base;
 }
 .ter-bg-l {
+  @extend .white-txt;
   background-color: $tertiary-light;
 }
 .ter-bg-d {
+  @extend .white-txt;
   background-color: $tertiary-dark;
 }
 .black-bg {
+  @extend .white-txt;
   background-color: $black-base;
 }
 .black-bg-l {
+  @extend .white-txt;
   background-color: $black-light;
 }
 .black-bg-d {
+  @extend .white-txt;
   background-color: $black-dark;
 }
 .white-bg {
@@ -158,6 +228,9 @@ li {
 }
 .black-txt-d {
   color: $black-dark;
+}
+.grey-txt {
+  color: $grey-base;
 }
 .pri-txt {
   color: $primary-base;
@@ -240,6 +313,17 @@ li {
   padding-top: $size-r1;
   padding-bottom: $size-r1;
 }
+.padding-t2b2 {
+  padding-top: $size-r2;
+  padding-bottom: $size-r2;
+}
+.padding-l2r2 {
+  padding-left: $size-r1;
+  padding-right: $size-r1;
+}
+.padding-2 {
+  padding: $size-r2;
+}
 .padding-l2 {
   padding-left: $size-r2;
 }
@@ -255,6 +339,9 @@ li {
 .margin-1 {
   margin: $size-r1;
 }
+.margin-2 {
+  margin: $size-r2;
+}
 .margin-t1 {
   margin-top: $size-r1;
 }
@@ -263,6 +350,9 @@ li {
 }
 .margin-t3 {
   margin-top: $size-r3;
+}
+.margin-t4 {
+  margin-top: $size-r4;
 }
 .margin-b1 {
   margin-bottom: $size-r1;
@@ -315,6 +405,14 @@ li {
   margin-left: $size-r1;
   margin-top: $size-r2;
 }
+.margin-t2b2 {
+  margin-top: $size-r2;
+  margin-bottom: $size-r2;
+}
+.margin-t2r2 {
+  margin-top: $size-r2;
+  margin-right: $size-r2;
+}
 
 /* Border Helper */
 .white-bd {
@@ -334,6 +432,9 @@ li {
 }
 .black-bd-d {
   border: $border-base solid $black-dark;
+}
+.grey-bd {
+  border: $border-base solid $grey-base;
 }
 .pri-bd {
   border: $border-base solid $primary-base;
@@ -363,5 +464,5 @@ li {
   border: $border-base solid $tertiary-dark;
 }
 .shadow-lb {
-  box-shadow: -1px 2px 12px -3px $black-light;
+  box-shadow: -1px 2px 12px -5px $black-light;
 }
