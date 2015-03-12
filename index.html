@@ -403,24 +403,41 @@
         </div>
         <div class="clear-float">
         </div>
-        <div class="margin-t2">
-          <h3>.crs (carousel)</h3>
-          <h4>Note: please pre-crop your images.</h4>
-          <div class="crs">
-            <img class="crs-img" src="images/img1.jpg">
-            <img class="crs-img" src="images/img2.jpg">
-            <img class="crs-img" src="images/img3.jpg">
-            <button class="left" onclick="slide_left()">&lt;</button>
-            <button class="right" onclick="slide_right()">&gt;</button>
-          </div>
-          <h4>Code:</h4>
+      </div>
+      <div class="margin-t2">
+        <h3>.crs (carousel)</h3>
+        <h4>Note: please pre-crop your images and include "scripts/carousel.js" in your html</h4>
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="crs"&gt;<br>
+            &lt;img class="crs-img" src="images/img1.jpg"&gt;<br>
+            &lt;img class="crs-img" src="images/img2.jpg"&gt;<br>
+            &lt;img class="crs-img" src="images/img3.jpg"&gt;<br>
+            &lt;button class="left" onclick="slide_left()"&gt;&lt;&lt;/button&gt;<br>
+            &lt;button class="right" onclick="slide_right()"&gt;&gt;&lt;/button&gt;<br>
+          &lt;/div&gt;
+        </code>
+        <div class="crs">
+          <img class="crs-img" src="images/img1.jpg">
+          <img class="crs-img" src="images/img2.jpg">
+          <img class="crs-img" src="images/img3.jpg">
+          <button class="left" onclick="slide_left()">&lt;</button>
+          <button class="right" onclick="slide_right()">&gt;</button>
+        </div>
+      </div>
+      <h3>.modal</h3>
+      <h4>Note: please have only one modal per page and include "scripts/modal.js" in your html</h4>
+      <button onclick="open_modal()">Show Modal</button>
+      <div class="modal">
+        <div class="overlay" onclick="close_modal()"></div>
+        <div class="content">
           <code>
-            &lt;div class="crs"&gt;<br>
-              &lt;img class="crs-img" src="images/img1.jpg"&gt;<br>
-              &lt;img class="crs-img" src="images/img2.jpg"&gt;<br>
-              &lt;img class="crs-img" src="images/img3.jpg"&gt;<br>
-              &lt;button class="left" onclick="slide_left()"&gt;&lt;&lt;/button&gt;<br>
-              &lt;button class="right" onclick="slide_right()"&gt;&gt;&lt;/button&gt;<br>
+            &lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;<br>
+            &lt;div class="modal"&gt;<br>
+              &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;<br>
+              &lt;div class="content"&gt;<br>
+                &lt;h2&gt;Hello Hackers!&lt;/h2&gt;<br>
+              &lt;/div&gt;<br>
             &lt;/div&gt;
           </code>
         </div>
@@ -439,5 +456,6 @@
     ga('send', 'pageview');
   </script>
   <script src="scripts/carousel.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 </html>

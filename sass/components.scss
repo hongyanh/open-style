@@ -184,3 +184,24 @@ nav > ul > li {
 .crs button.right {
   right: 0;
 }
+.overlay {
+  background-color: $black-base;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.modal {
+  display: none;
+}
+.modal > .content {
+  background-color: $white-base;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
+}
