@@ -154,3 +154,33 @@ nav > ul > li {
 .arrow-right {
   @include arrow-right($black-base, 10px);
 }
+.crs {
+  width: $carousel-width;
+  height: $carousel-height;
+  position: relative;
+  overflow: hidden;
+}
+.crs-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.crs button {
+  @extend .margin-l1r1;
+  font-size: 2rem;
+  font-weight: $font-light;
+  position: absolute;
+  top: 45%;
+  opacity: 0;
+  transition: opacity .5s linear;
+  padding: 1rem;
+}
+.crs:hover button {
+  opacity: .7;
+}
+.crs button.left {
+  left: 0;
+}
+.crs button.right {
+  right: 0;
+}

@@ -379,7 +379,7 @@ li {
   margin-right: 1rem;
   margin-bottom: 1rem; }
 
-.margin-l1r1 {
+.margin-l1r1, .crs button {
   margin-left: 1rem;
   margin-right: 1rem; }
 
@@ -393,6 +393,10 @@ li {
 
 .margin-t2r2 {
   margin-top: 2rem;
+  margin-right: 2rem; }
+
+.margin-l2r2 {
+  margin-left: 2rem;
   margin-right: 2rem; }
 
 /* Border Helper */
@@ -853,5 +857,34 @@ nav > ul > li {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #222; }
+
+.crs {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden; }
+
+.crs-img {
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.crs button {
+  font-size: 2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 45%;
+  opacity: 0;
+  transition: opacity .5s linear;
+  padding: 1rem; }
+
+.crs:hover button {
+  opacity: .7; }
+
+.crs button.left {
+  left: 0; }
+
+.crs button.right {
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
