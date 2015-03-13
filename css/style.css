@@ -10,14 +10,15 @@ html, body {
   font-size: 14px;
   background-color: white; }
 
-h1, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6, p {
   font-weight: 400; }
 
 h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 700; }
 
 a {
   text-decoration: none;
@@ -60,14 +61,27 @@ a.ter-txt-l:hover {
 img {
   width: 100%; }
 
-h2 {
-  font-weight: 700; }
-
-textarea, input, button {
+textarea, input, button, select, p, span, a, h1, h2, h3, h4, h5, h6, p {
   outline: none; }
 
 strong {
   font-weight: 600; }
+
+select {
+  background: white;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  max-height: 3.5rem; }
+
+option {
+  height: 1rem; }
+
+textarea {
+  resize: vertical; }
+
+input::-webkit-calendar-picker-indicator {
+  display: none; }
 
 /* List */
 ul {
@@ -396,7 +410,7 @@ li {
   margin-right: 1rem;
   margin-bottom: 1rem; }
 
-.margin-l1r1 {
+.margin-l1r1, .crs button {
   margin-left: 1rem;
   margin-right: 1rem; }
 
@@ -410,6 +424,10 @@ li {
 
 .margin-t2r2 {
   margin-top: 2rem;
+  margin-right: 2rem; }
+
+.margin-l2r2 {
+  margin-left: 2rem;
   margin-right: 2rem; }
 
 /* Border Helper */
@@ -870,5 +888,55 @@ nav > ul > li {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #222; }
+
+.crs {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden; }
+
+.crs-img {
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.crs button {
+  font-size: 2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 45%;
+  opacity: 0;
+  transition: opacity .5s linear;
+  padding: 1rem; }
+
+.crs:hover button {
+  opacity: .7; }
+
+.crs button.left {
+  left: 0; }
+
+.crs button.right {
+  right: 0; }
+
+.overlay {
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  text-align: center; }
+
+.modal {
+  display: none; }
+
+.modal > .content {
+  background-color: #f5f5f5;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
