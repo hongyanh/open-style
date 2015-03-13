@@ -7,7 +7,7 @@ html,body {
   font-size: $font-size;
   background-color: $background-color;
 }
-h1,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6,p {
   font-weight: $font-normal;
 }
 h1 {
@@ -15,6 +15,7 @@ h1 {
 }
 h2 {
   font-size: $h2-size;
+  font-weight: $font-bold;
 }
 a {
   text-decoration: none;
@@ -57,12 +58,25 @@ a.ter-txt-l:hover {
 img {
   width: 100%;
 }
-h2 {
-  font-weight: $font-bold;
-}
-textarea, input, button { outline: none; }
+textarea,input,button,select,p,span,a,h1,h2,h3,h4,h5,h6,p { outline: none; }
 strong {
   font-weight: $font-semi;
+}
+select {
+  background: $white-light;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  max-height: 3.5rem;
+}
+option {
+  height: 1rem;
+}
+textarea {
+  resize:vertical;
+}
+input::-webkit-calendar-picker-indicator {
+  display: none;
 }
 
 /* List */
@@ -102,6 +116,17 @@ li {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
+}
+.container-s {
+  max-width: $container-size/2;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 /* Position Helpers */
@@ -278,6 +303,12 @@ li {
 /* Gap Helpers */
 .clear-margin {
   margin: 0;
+}
+.clear-margin-t {
+  margin-top: 0;
+}
+.clear-margin-b {
+  margin-bottom: 0;
 }
 .clear-padding {
   padding: 0;

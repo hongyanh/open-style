@@ -10,14 +10,15 @@ html, body {
   font-size: 14px;
   background-color: white; }
 
-h1, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6, p {
   font-weight: 400; }
 
 h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 700; }
 
 a {
   text-decoration: none;
@@ -60,14 +61,27 @@ a.ter-txt-l:hover {
 img {
   width: 100%; }
 
-h2 {
-  font-weight: 700; }
-
-textarea, input, button {
+textarea, input, button, select, p, span, a, h1, h2, h3, h4, h5, h6, p {
   outline: none; }
 
 strong {
   font-weight: 600; }
+
+select {
+  background: white;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  max-height: 3.5rem; }
+
+option {
+  height: 1rem; }
+
+textarea {
+  resize: vertical; }
+
+input::-webkit-calendar-picker-indicator {
+  display: none; }
 
 /* List */
 ul {
@@ -105,6 +119,17 @@ li {
   margin-left: auto;
   margin-right: auto;
   overflow: auto; }
+
+.container-s {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0; }
 
 /* Position Helpers */
 .pull-left {
@@ -264,6 +289,12 @@ li {
 /* Gap Helpers */
 .clear-margin {
   margin: 0; }
+
+.clear-margin-t {
+  margin-top: 0; }
+
+.clear-margin-b {
+  margin-bottom: 0; }
 
 .clear-padding {
   padding: 0; }
