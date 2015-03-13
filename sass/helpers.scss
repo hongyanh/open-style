@@ -103,6 +103,17 @@ li {
   margin-right: auto;
   overflow: auto;
 }
+.container-s {
+  max-width: $container-size/2;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
 /* Position Helpers */
 .pull-left {
@@ -278,6 +289,12 @@ li {
 /* Gap Helpers */
 .clear-margin {
   margin: 0;
+}
+.clear-margin-t {
+  margin-top: 0;
+}
+.clear-margin-b {
+  margin-bottom: 0;
 }
 .clear-padding {
   padding: 0;
