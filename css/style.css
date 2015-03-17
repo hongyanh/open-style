@@ -8,7 +8,9 @@ html, body {
   height: 100%;
   color: #3c3c3c;
   font-size: 14px;
-  background-color: white; }
+  background-color: white;
+  padding: 0;
+  margin: 0; }
 
 h1, h3, h4, h5, h6, p {
   font-weight: 400; }
@@ -59,7 +61,8 @@ a.ter-txt-l:hover {
   color: #0570bd; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  vertical-align: middle; }
 
 textarea, input, button, select, p, span, a, h1, h2, h3, h4, h5, h6, p {
   outline: none; }
@@ -917,6 +920,14 @@ nav > ul > li {
 
 .crs button.right {
   right: 0; }
+
+.crs-thumb {
+  width: 500px; }
+  .crs-thumb .thumb {
+    float: left;
+    width: 15%; }
+    .crs-thumb .thumb.active {
+      border: 1px solid #f7941f; }
 
 .overlay {
   background-color: #222;

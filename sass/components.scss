@@ -184,6 +184,16 @@ nav > ul > li {
 .crs button.right {
   right: 0;
 }
+.crs-thumb {
+  width: $carousel-width;
+  .thumb {
+    float: left;
+    width: 15%;
+    &.active {
+      border: 1px solid $primary-base;
+    }
+  }
+}
 .overlay {
   background-color: $black-base;
   width: 100%;

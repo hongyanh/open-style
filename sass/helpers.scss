@@ -1,11 +1,12 @@
 /* General Elements */
-* { box-sizing: border-box }
+* { box-sizing: border-box;}
 html,body {
   font-family: $font;
   height: 100%;
   color: $black-light;
   font-size: $font-size;
   background-color: $background-color;
+  padding:0; margin:0;
 }
 h1,h3,h4,h5,h6,p {
   font-weight: $font-normal;
@@ -57,6 +58,7 @@ a.ter-txt-l:hover {
 }
 img {
   width: 100%;
+  vertical-align: middle;
 }
 textarea,input,button,select,p,span,a,h1,h2,h3,h4,h5,h6,p { outline: none; }
 strong {
