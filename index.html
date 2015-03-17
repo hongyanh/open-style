@@ -36,9 +36,9 @@
       <h2 class="bold" id="install">&#9679; Installation</h2>
       <h3 class="bold">&#9679; CSS version</h3>
       <p>1. <a href="css/normalize.css" target="_blank" download>Download</a> the normalize.css, put it in your /css folder and reference in your html:</p>
-      <code>&lt;link rel="stylesheet" type="text/css" href="css/normalize.css"&gt;</code>
+      <pre><code>&lt;link rel="stylesheet" type="text/css" href="css/normalize.css"&gt;</code></pre>
       <p>2. <a href="css/style.css" target="_blank" download>Download</a> the all-in-one css version, put it in your /css folder and reference in your html:</p>
-      <code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code>
+      <pre><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code></pre>
       <h3 class="bold">&#9679; SASS version</h3>
       <p>1. Go to the <a href="https://github.com/hongyanh/open-style.git" target="_blank">github repository</a> and download the source code;</p>
       <p>2. In the /sass/main.scss file, comment out the style you do not need (you have to keep variables and helpers);</p>
@@ -246,13 +246,13 @@
       </div>
       <div class="col-1of2">
         <h3>Code without extra class</h3>
-        <code>&lt;input type="text" value="input"&gt;</code>
+        <pre><code>&lt;input type="text" value="input"&gt;</code></pre>
         <h3>Use .square for hard corners</h3>
-        <code>&lt;input class="square" type="text" value="input .square"&gt;</code>
+        <pre><code>&lt;input class="square" type="text" value="input .square"&gt;</code></pre>
         <h3>Text area is easy too</h3>
-        <code>&lt;textarea cols="45" rows="5"&gt;&lt;/textarea&gt;</code>
+        <pre><code>&lt;textarea cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
         <h3>Use .square for hard corners</h3>
-        <code>&lt;textarea class="square" cols="45" rows="5"&gt;&lt;/textarea&gt;</code>
+        <pre><code>&lt;textarea class="square" cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
       </div>
     </div>
     <div class="clear-float"></div>
@@ -272,16 +272,17 @@
       </div>
       <h3>.cover</h3>
       <div class="full-width height-20 bg-img margin-t1">
-        <div class="txt-center cover">
+        <div class="cover">
           <div class="center-v">
-            <code class="white-txt-d">&lt;div class="full-width height-20 bg-img margin-t1"&gt;<br>
-              &lt;div class="txt-center cover"&gt;<br>
-              &lt;div class="center-v"&gt;<br>
-              &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-            </code>
+            <pre><code class="white-txt-d">
+              &lt;div class="full-width height-20 bg-img margin-t1"&gt;
+                &lt;div class="cover"&gt;
+                  &lt;div class="center-v"&gt;
+                    &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code></pre>
           </div>
         </div>
       </div>
@@ -292,20 +293,21 @@
           <source src="videos/bg.mp4" type="video/mp4">
           <source src="videos/bg.ogv" type="video/ogg">
         </video>
-        <div class="txt-center cover">
+        <div class="cover">
           <div class="center-v">
-            <code class="white-txt-d">&lt;div class="full-width height-40 bg-video"&gt;<br>
-              &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;<br>
-              &lt;source src="videos/bg.webm" type="video/webm"&gt;<br>
-              &lt;source src="videos/bg.mp4" type="video/mp4"&gt;<br>
-              &lt;/video&gt;<br>
-              &lt;div class="txt-center cover"&gt;<br>
-              &lt;div class="center-v"&gt;<br>
-              &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-            </code>
+            <pre><code class="white-txt-d">
+              &lt;div class="full-width height-40 bg-video"&gt;
+                &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;
+                  &lt;source src="videos/bg.webm" type="video/webm"&gt;
+                  &lt;source src="videos/bg.mp4" type="video/mp4"&gt;
+                &lt;/video&gt;
+                &lt;div class="cover"&gt;
+                  &lt;div class="center-v"&gt;
+                    &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code></pre>
           </div>
         </div>
       </div>
@@ -408,21 +410,33 @@
         <h3>.crs (carousel)</h3>
         <h4>Note: please pre-crop your images and include "scripts/carousel.js" at the end of your body tag.</h4>
         <h4>Code:</h4>
-        <code>
-          &lt;div class="crs"&gt;<br>
-            &lt;img class="crs-img" src="images/img1.jpg"&gt;<br>
-            &lt;img class="crs-img" src="images/img2.jpg"&gt;<br>
-            &lt;img class="crs-img" src="images/img3.jpg"&gt;<br>
-            &lt;button class="left" onclick="slide_left()"&gt;&lt;&lt;/button&gt;<br>
-            &lt;button class="right" onclick="slide_right()"&gt;&gt;&lt;/button&gt;<br>
+        <pre><code>
+          &lt;div class="crs"&gt;
+            &lt;img class="crs-img" src="images/img1.jpg"&gt;
+            &lt;img class="crs-img" src="images/img2.jpg"&gt;
+            &lt;img class="crs-img" src="images/img3.jpg"&gt;
+            &lt;button class="left" onclick="slide_left(1)"&gt;&lt;&lt;/button&gt;
+            &lt;button class="right" onclick="slide_right(1)"&gt;&gt;&lt;/button&gt;
           &lt;/div&gt;
-        </code>
+          &lt;div class="crs-thumb"&gt;
+            &lt;img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg"&gt;
+            &lt;img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg"&gt;
+            &lt;img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg"&gt;
+            &lt;div class="clear-float"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
         <div class="crs">
           <img class="crs-img" src="images/img1.jpg">
           <img class="crs-img" src="images/img2.jpg">
           <img class="crs-img" src="images/img3.jpg">
-          <button class="left" onclick="slide_left()">&lt;</button>
-          <button class="right" onclick="slide_right()">&gt;</button>
+          <button class="left" onclick="slide_left(1)">&lt;</button>
+          <button class="right" onclick="slide_right(1)">&gt;</button>
+        </div>
+        <div class="crs-thumb">
+          <img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg">
+          <img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg">
+          <img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg">
+          <div class="clear-float"></div>
         </div>
       </div>
       <h3>.modal</h3>
@@ -431,15 +445,15 @@
       <div class="modal">
         <div class="overlay" onclick="close_modal()"></div>
         <div class="content">
-          <code>
-            &lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;<br>
-            &lt;div class="modal"&gt;<br>
-              &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;<br>
-              &lt;div class="content"&gt;<br>
-                &lt;h2&gt;Hello Hackers!&lt;/h2&gt;<br>
-              &lt;/div&gt;<br>
+          <pre><code>
+            &lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;
+            &lt;div class="modal"&gt;
+              &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;
+              &lt;div class="content"&gt;
+                &lt;h2&gt;Hello Hackers!&lt;/h2&gt;
+              &lt;/div&gt;
             &lt;/div&gt;
-          </code>
+          </code></pre>
         </div>
       </div>
       <div class="clear-float margin-b2"></div>
