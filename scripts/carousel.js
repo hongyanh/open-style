@@ -71,6 +71,3 @@ document.getElementsByClassName('left')[0].style.display = 'none';
 if (thumbs.length === 1) {
     document.getElementsByClassName('right')[0].style.display = 'none';
 }
-for (var i = 0; i < thumbs.length; i++) {
-    thumbs[i].style.width = 100 / thumbs.length + '%';
-}
