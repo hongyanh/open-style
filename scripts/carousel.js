@@ -63,6 +63,7 @@ function select_image(obj, num) {
 var images = document.getElementsByClassName('crs-img');
 var current_image = 0;
 var thumbs = document.getElementsByClassName('thumb');
+var addClassThumb = false;
 for (var i = 0; i < images.length; i++) {
     images[i].style.transform = 'translateX(' + i * 100 + '%)';
 }
