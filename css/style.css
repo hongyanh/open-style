@@ -922,10 +922,11 @@ nav > ul > li {
   right: 0; }
 
 .crs-thumb {
-  width: 500px; }
+  width: 500px;
+  overflow: auto; }
   .crs-thumb .thumb {
     float: left;
-    width: 15%; }
+    width: 80px; }
     .crs-thumb .thumb.active {
       border: 1px solid #f7941f; }
 

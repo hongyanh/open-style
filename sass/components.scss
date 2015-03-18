@@ -186,9 +186,10 @@ nav > ul > li {
 }
 .crs-thumb {
   width: $carousel-width;
+  overflow: auto;
   .thumb {
     float: left;
-    width: 18%;
+    width: 80px;
     &.active {
       border: 1px solid $primary-base;
     }
