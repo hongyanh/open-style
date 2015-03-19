@@ -159,6 +159,8 @@ nav > ul > li {
   height: $carousel-height;
   position: relative;
   overflow: hidden;
+  margin-bottom: .1rem;
+  border: 1px solid $white-light;
 }
 .crs-img {
   height: 100%;
@@ -186,10 +188,10 @@ nav > ul > li {
 }
 .crs-thumb {
   width: $carousel-width;
-  overflow: auto;
   .thumb {
     float: left;
-    width: 80px;
+    width: 100px;
+    border: 1px solid $white-light;
     &.active {
       border: 1px solid $primary-base;
     }

@@ -64,9 +64,6 @@ var images = document.getElementsByClassName('crs-img');
 var current_image = 0;
 var thumbs = document.getElementsByClassName('thumb');
 var addClassThumb = false;
-var scroll = document.getElementsByClassName('scroll');
-var scroll_width = thumbs.length * thumbs[0].offsetWidth;
-scroll[0].style.width = scroll_width + 'px';
 for (var i = 0; i < images.length; i++) {
     images[i].style.transform = 'translateX(' + i * 100 + '%)';
 }

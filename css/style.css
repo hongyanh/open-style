@@ -896,7 +896,9 @@ nav > ul > li {
   width: 500px;
   height: 500px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: .1rem;
+  border: 1px solid white; }
 
 .crs-img {
   height: 100%;
@@ -922,11 +924,11 @@ nav > ul > li {
   right: 0; }
 
 .crs-thumb {
-  width: 500px;
-  overflow: auto; }
+  width: 500px; }
   .crs-thumb .thumb {
     float: left;
-    width: 80px; }
+    width: 100px;
+    border: 1px solid white; }
     .crs-thumb .thumb.active {
       border: 1px solid #f7941f; }
 
