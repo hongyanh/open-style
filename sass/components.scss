@@ -210,12 +210,12 @@ nav > ul > li {
 .modal {
   display: none;
 }
-.modal > .content {
+.modal .content {
   background-color: $white-base;
   width: $modal-width;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   padding: 2rem;
-  left: $modal-width/2;
+  left: (100% - $modal-width) / 2;
 }
