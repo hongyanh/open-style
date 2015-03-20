@@ -951,6 +951,7 @@ nav > ul > li {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  padding: 2rem; }
+  padding: 2rem;
+  left: 25%; }
 
 /*# sourceMappingURL=style.css.map */
