@@ -943,7 +943,7 @@ nav > ul > li {
   text-align: center; }
 
 .modal {
-  display: none; }
+  visibility: hidden; }
 
 .modal .content {
   background-color: #f5f5f5;

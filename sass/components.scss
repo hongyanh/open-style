@@ -208,7 +208,7 @@ nav > ul > li {
   text-align: center;
 }
 .modal {
-  display: none;
+  visibility: hidden;
 }
 .modal .content {
   background-color: $white-base;
