@@ -209,11 +209,19 @@ nav > ul > li {
 }
 .modal {
   visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
 }
 .modal .content {
   background-color: $white-base;
   width: $modal-width;
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 2rem;
