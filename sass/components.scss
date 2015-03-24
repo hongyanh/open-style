@@ -92,6 +92,7 @@ nav > ul > li {
   text-align: left;
   white-space: nowrap;
   z-index: 1;
+  margin: 0;
 }
 .dropdown > ul > li {
   margin: 0;
@@ -269,4 +270,25 @@ nav > ul > li {
     right: 0px;
     background-color: #fff;
   }
+}
+.info-box {
+  display: inline;
+}
+.info-box .box {
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+  & > * {
+    background-color: $black-light;
+    color: $white-dark;
+    margin-top: 10px;
+    @extend .padding-1;
+  }
+  &:before {
+    content: " ";
+    @include arrow-up($black-light, 10px);
+  }
+}
+.info-box:hover .box {
+  display: block;
 }
