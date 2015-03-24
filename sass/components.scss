@@ -227,3 +227,31 @@ nav > ul > li {
   padding: 2rem;
   left: (100% - $modal-width) / 2;
 }
+.close {
+  @extend .clear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  &:before, &:after {
+    content: " ";
+    width: 50px;
+    height: 5px;
+    display: block;
+    background-color: $grey-base;
+    top: 25px;
+    position: absolute;
+    right: 5px;
+    transition: background 0.5s ease;
+  }
+  &:hover:before, &:hover:after {
+    background-color: $black-light;
+  }
+  &:before {
+    transform: rotate3d(0,0,1,45deg);
+  }
+  &:after {
+    transform: rotate3d(0,0,1,-45deg);
+  }
+}
