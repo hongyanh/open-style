@@ -275,13 +275,13 @@
         <div class="cover">
           <div class="center-v">
             <pre><code class="white-txt-d">
-              &lt;div class="full-width height-20 bg-img margin-t1"&gt;
-                &lt;div class="cover"&gt;
-                  &lt;div class="center-v"&gt;
-                    &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
-                  &lt;/div&gt;
+            &lt;div class="full-width height-20 bg-img margin-t1"&gt;
+              &lt;div class="cover"&gt;
+                &lt;div class="center-v"&gt;
+                  &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
+            &lt;/div&gt;
             </code></pre>
           </div>
         </div>
@@ -296,30 +296,38 @@
         <div class="cover">
           <div class="center-v">
             <pre><code class="white-txt-d">
-              &lt;div class="full-width height-40 bg-video"&gt;
-                &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;
-                  &lt;source src="videos/bg.webm" type="video/webm"&gt;
-                  &lt;source src="videos/bg.mp4" type="video/mp4"&gt;
-                &lt;/video&gt;
-                &lt;div class="cover"&gt;
-                  &lt;div class="center-v"&gt;
-                    &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
-                  &lt;/div&gt;
+            &lt;div class="full-width height-40 bg-video"&gt;
+              &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;
+                &lt;source src="videos/bg.webm" type="video/webm"&gt;
+                &lt;source src="videos/bg.mp4" type="video/mp4"&gt;
+              &lt;/video&gt;
+              &lt;div class="cover"&gt;
+                &lt;div class="center-v"&gt;
+                  &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
+            &lt;/div&gt;
             </code></pre>
           </div>
         </div>
       </div>
       <h3>.flash</h3>
-      <div class="full-width flash-pri margin-b1">
-        .full-width .flash-pri
+      <div class="flash-pri margin-b1">
+        .flash .flash-pri
       </div>
-      <div class="full-width flash-sec margin-b1">
-        .full-width .flash-sec
+      <div class="flash-sec margin-b1">
+        .flash .flash-sec
       </div>
-      <div class="full-width flash-ter margin-b1">
-        .full-width .flash-ter
+      <div class="flash-ter margin-b1">
+        .flash .flash-ter
+      </div>
+      <h3>Flash with close button: </h3>
+      <h4>Note: please include "<a href="scripts/flash.js" target="_blank" download>scripts/flash.js</a>" at the end of your body tag.</h4>
+      <div class="flash flash-pri margin-b1">
+        &lt;div class="flash flash-pri margin-b1"&gt;
+          &lt;button class="close" onclick="close_flash()"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        <button class="close" onclick="close_flash()"></button>
       </div>
       <h3>.nav-bar</h3>
       <nav class="nav-bar white-bg">
@@ -411,19 +419,19 @@
         <h4>Note: please pre-crop your images and include "<a href="scripts/carousel.js" target="_blank" download>scripts/carousel.js</a>" at the end of your body tag.</h4>
         <h4>Code:</h4>
         <pre><code>
-          &lt;div class="crs"&gt;
-            &lt;img class="crs-img" src="images/img1.jpg"&gt;
-            &lt;img class="crs-img" src="images/img2.jpg"&gt;
-            &lt;img class="crs-img" src="images/img3.jpg"&gt;
-            &lt;button class="left" onclick="slide_left(1)"&gt;&lt;&lt;/button&gt;
-            &lt;button class="right" onclick="slide_right(1)"&gt;&gt;&lt;/button&gt;
-          &lt;/div&gt;
-          &lt;div class="crs-thumb"&gt;
-              &lt;img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg"&gt;
-              &lt;img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg"&gt;
-              &lt;img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg"&gt;
-              &lt;div class="clear-float"&gt;&lt;/div&gt;
-          &lt;/div&gt;
+        &lt;div class="crs"&gt;
+          &lt;img class="crs-img" src="images/img1.jpg"&gt;
+          &lt;img class="crs-img" src="images/img2.jpg"&gt;
+          &lt;img class="crs-img" src="images/img3.jpg"&gt;
+          &lt;button class="left" onclick="slide_left(1)"&gt;&lt;&lt;/button&gt;
+          &lt;button class="right" onclick="slide_right(1)"&gt;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="crs-thumb"&gt;
+            &lt;img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg"&gt;
+            &lt;img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg"&gt;
+            &lt;img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg"&gt;
+            &lt;div class="clear-float"&gt;&lt;/div&gt;
+        &lt;/div&gt;
         </code></pre>
         <div class="crs">
           <img class="crs-img" src="images/img1.jpg">
@@ -446,14 +454,14 @@
         <div class="overlay" onclick="close_modal()"></div>
         <div class="content">
           <pre><code>
-            &lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;
-            &lt;div class="modal"&gt;
-              &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;
-              &lt;div class="content"&gt;
-                &lt;h2&gt;Hello Hackers!&lt;/h2&gt;
-                &lt;button class="close" onclick="close_modal()"&gt;&lt;/button&gt;
-              &lt;/div&gt;
+          &lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;
+          &lt;div class="modal"&gt;
+            &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;
+            &lt;div class="content"&gt;
+              &lt;h2&gt;Hello Hackers!&lt;/h2&gt;
+              &lt;button class="close" onclick="close_modal()"&gt;&lt;/button&gt;
             &lt;/div&gt;
+          &lt;/div&gt;
           </code></pre>
           <button class="close" onclick="close_modal()"></button>
         </div>
@@ -473,5 +481,6 @@
   </script>
   <script src="scripts/carousel.js"></script>
   <script src="scripts/modal.js"></script>
+  <script src="scripts/flash.js"></script>
 </body>
 </html>

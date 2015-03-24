@@ -36,23 +36,25 @@ video#bgvid {
   min-height: 100%;
   z-index: -1;
 }
-.flash-pri {
-  @extend .pri-bd-l;
+.flash {
+  @extend .full-width;
   padding: $size-r1;
-  background-color: $primary-base;
   color: $white-base;
+}
+.flash-pri {
+  @extend .flash;
+  @extend .pri-bd-l;
+  background-color: $primary-base;
 }
 .flash-sec {
+  @extend .flash;
   @extend .sec-bd-l;
-  padding: $size-r1;
   background-color: $secondary-base;
-  color: $white-base;
 }
 .flash-ter {
+  @extend .flash;
   @extend .ter-bd-l;
-  padding: $size-r1;
   background-color: $tertiary-base;
-  color: $white-base;
 }
 nav > ul > li {
   display: inline-block;
@@ -253,5 +255,18 @@ nav > ul > li {
   }
   &:after {
     transform: rotate3d(0,0,1,-45deg);
+  }
+}
+.flash-pri .close {
+  position: relative;
+  float: right;
+  width: 25px;
+  height: 25px;
+  &:before, &:after {
+    width: 25px;
+    height: 2px;
+    top: 9px;
+    right: 0px;
+    background-color: #fff;
   }
 }
