@@ -275,15 +275,18 @@ nav > ul > li {
 }
 .info-box {
   display: inline;
+  position: relative;
 }
 .info-box .box {
   display: none;
   position: absolute;
   margin-top: -10px;
+  left: 0;
   & > * {
     background-color: $black-light;
     color: $white-dark;
     margin-top: 10px;
+    white-space: pre;
     @extend .padding-1;
   }
   &:before {

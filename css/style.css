@@ -1009,16 +1009,19 @@ nav > ul > li {
     background-color: #fff; }
 
 .info-box {
-  display: inline; }
+  display: inline;
+  position: relative; }
 
 .info-box .box {
   display: none;
   position: absolute;
-  margin-top: -10px; }
+  margin-top: -10px;
+  left: 0; }
   .info-box .box > * {
     background-color: #3c3c3c;
     color: gainsboro;
-    margin-top: 10px; }
+    margin-top: 10px;
+    white-space: pre; }
   .info-box .box:before {
     content: " ";
     width: 0;
