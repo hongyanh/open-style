@@ -40,6 +40,7 @@ video#bgvid {
   @extend .full-width;
   padding: $size-r1;
   color: $white-base;
+  position: relative;
 }
 .flash-pri {
   @extend .flash;
@@ -258,15 +259,16 @@ nav > ul > li {
     transform: rotate3d(0,0,1,-45deg);
   }
 }
-.flash-pri .close {
-  position: relative;
-  float: right;
+.flash .close {
+  position: absolute;
   width: 25px;
   height: 25px;
+  top: 15px;
+  right: 10px;
   &:before, &:after {
     width: 25px;
     height: 2px;
-    top: 9px;
+    top: 10px;
     right: 0px;
     background-color: #fff;
   }

@@ -776,7 +776,8 @@ video#bgvid {
 
 .flash, .flash-pri, .flash-sec, .flash-ter {
   padding: 1rem;
-  color: #f5f5f5; }
+  color: #f5f5f5;
+  position: relative; }
 
 .flash-pri {
   background-color: #f7941f; }
@@ -994,15 +995,16 @@ nav > ul > li {
   .close:after {
     transform: rotate3d(0, 0, 1, -45deg); }
 
-.flash-pri .close {
-  position: relative;
-  float: right;
+.flash .close, .flash-pri .close, .flash-sec .close, .flash-ter .close {
+  position: absolute;
   width: 25px;
-  height: 25px; }
-  .flash-pri .close:before, .flash-pri .close:after {
+  height: 25px;
+  top: 15px;
+  right: 10px; }
+  .flash .close:before, .flash-pri .close:before, .flash-sec .close:before, .flash-ter .close:before, .flash .close:after, .flash-pri .close:after, .flash-sec .close:after, .flash-ter .close:after {
     width: 25px;
     height: 2px;
-    top: 9px;
+    top: 10px;
     right: 0px;
     background-color: #fff; }
 
