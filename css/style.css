@@ -739,7 +739,14 @@ input, textarea {
 
 /* arrows */
 .card {
-  margin: 1rem; }
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 30rem;
+  height: 38rem; }
+
+.card img {
+  height: 30rem; }
 
 .img-border {
   border-width: 10px; }

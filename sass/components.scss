@@ -1,6 +1,13 @@
 .card {
   @extend .shadow-lb;
   margin: $size-r1;
+  display: inline-block;
+  vertical-align: top;
+  width: $card-width;
+  height: $card-height;
+}
+.card img {
+  height: $card-img-height;
 }
 .img-border {
   @extend .white-bd-l;
