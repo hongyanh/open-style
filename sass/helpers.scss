@@ -120,7 +120,13 @@ li {
   overflow: auto;
 }
 .container-s {
-  max-width: $container-size/2;
+  max-width: $container-size/ 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.container-l {
+  max-width: $container-size * 1.5;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -300,6 +306,13 @@ li {
 }
 .extra {
   font-weight: $font-extra;
+}
+.small {
+  font-size: .7rem;
+}
+.large {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 /* Gap Helpers */

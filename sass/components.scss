@@ -201,7 +201,8 @@ nav > ul > li {
   width: $carousel-width;
   .thumb {
     float: left;
-    width: 100px;
+    width: $carousel-width / 5;
+    height: $carousel-height / 5;
     border: 1px solid $white-light;
     &.active {
       border: 1px solid $primary-base;

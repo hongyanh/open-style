@@ -124,7 +124,13 @@ li {
   overflow: auto; }
 
 .container-s {
-  max-width: 40rem;
+  max-width: 53.33333rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
+.container-l {
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden; }
@@ -288,6 +294,13 @@ li {
 
 .extra {
   font-weight: 800; }
+
+.small {
+  font-size: .7rem; }
+
+.large {
+  font-size: 1.5rem;
+  line-height: 2rem; }
 
 /* Gap Helpers */
 .clear-margin {
@@ -945,6 +958,7 @@ nav > ul > li {
   .crs-thumb .thumb {
     float: left;
     width: 100px;
+    height: 100px;
     border: 1px solid white; }
     .crs-thumb .thumb.active {
       border: 1px solid #f7941f; }
