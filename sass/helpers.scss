@@ -104,6 +104,9 @@ img {
 strong {
   font-weight: $font-semi;
 }
+small {
+  font-size: .7rem;
+}
 select {
   background: $white-light;
   -moz-appearance: none;
@@ -198,6 +201,12 @@ li {
 .middle {
   vertical-align: middle;
 }
+.top {
+  vertical-align: top;
+}
+.block {
+  display: block;
+}
 
 /* Layer Helpers */
 .fix {
@@ -206,6 +215,9 @@ li {
 }
 .absolute {
   position: absolute;
+}
+.relative {
+  position: relative;
 }
 .layer-0 {
   z-index: 0;
