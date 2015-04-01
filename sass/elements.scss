@@ -47,14 +47,25 @@ button:hover, .button:hover, a.button:hover {
   @extend .button-ter;
   background: $tertiary-light;
 }
-.wide,.wide:hover {
+.button-alert {
+  @extend .button;
+  background: $alert-base;
+}
+.button-alert.shadow {
+  box-shadow: inset 0 -3px 0 $alert-dark;
+}
+.button-alert:hover, a.button-alert:hover{
+  @extend .button-alert;
+  background: $alert-light;
+}
+.wide,.wide:hover,a.wide:hover {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.square, .square:hover {
+.square, .square:hover,a.wide:hover {
   border-radius: 0;
 }
-button:disabled{
+button:disabled, .button:disabled{
   color: $white-base;
   background: $grey-base;
 }

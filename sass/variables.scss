@@ -29,6 +29,7 @@ $border-base: 1px;
 $primary-base: #f7941f;
 $secondary-base: #2F9778;
 $tertiary-base: #0570bd;
+$alert-base: #ff3939;
 
 $black-base: #222;
 $white-base: #f5f5f5;
@@ -49,13 +50,19 @@ $black-dark: darken( $black-base, 10%);
 $white-light: lighten( $white-base, 10%);
 $white-dark: darken( $white-base, 10%);
 
+$alert-light: lighten( $alert-base, 10%);
+$alert-dark: darken( $alert-base, 15%);
+
+$grey-light: lighten( $grey-base, 10%);
+$grey-dark: darken( $grey-base, 10%);
+
 $background-color: $white-light;
 $link-color: $primary-base;
 $link-color-hover: $primary-light;
 
-$card-width: 30rem;
-$card-height: 38rem;
-$card-img-height: 30rem;
+$card-width: 20rem;
+$card-height: 28rem;
+$card-img-height: 20rem;
 
 $carousel-width: 500px;
 $carousel-height: 500px;

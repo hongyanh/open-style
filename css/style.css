@@ -140,6 +140,11 @@ li {
   width: 0;
   height: 0; }
 
+.invisible {
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
 /* Position Helpers */
 .pull-left {
   float: left; }
@@ -219,6 +224,24 @@ li {
 .white-bg-d {
   background-color: gainsboro; }
 
+.grey-bg {
+  background-color: #bbb; }
+
+.grey-bg-l {
+  background-color: #d4d4d4; }
+
+.grey-bg-d {
+  background-color: #a2a2a2; }
+
+.alert-bg {
+  background-color: #ff3939; }
+
+.alert-bg-l {
+  background-color: #ff6c6c; }
+
+.alert-bg-d {
+  background-color: #ec0000; }
+
 /* Text Helpers */
 .txt-center {
   text-align: center; }
@@ -250,9 +273,6 @@ li {
 .black-txt-d {
   color: #090909; }
 
-.grey-txt {
-  color: #bbb; }
-
 .pri-txt {
   color: #f7941f; }
 
@@ -279,6 +299,24 @@ li {
 
 .ter-txt-d {
   color: #04538b; }
+
+.grey-txt {
+  color: #bbb; }
+
+.grey-txt-l {
+  color: #d4d4d4; }
+
+.grey-txt-d {
+  color: #a2a2a2; }
+
+.alert-txt {
+  color: #ff3939; }
+
+.alert-txt-l {
+  color: #ff6c6c; }
+
+.alert-txt-d {
+  color: #ec0000; }
 
 .light {
   font-weight: 300; }
@@ -495,6 +533,24 @@ li {
 .ter-bd-d {
   border: 1px solid #04538b; }
 
+.grey-bd, input:focus, textarea:focus {
+  border: 1px solid #bbb; }
+
+.grey-bd-l {
+  border: 1px solid #d4d4d4; }
+
+.grey-bd-d {
+  border: 1px solid #a2a2a2; }
+
+.alert-bd {
+  border: 1px solid #ff3939; }
+
+.alert-bd-l {
+  border: 1px solid #ff6c6c; }
+
+.alert-bd-d {
+  border: 1px solid #ec0000; }
+
 .shadow-lb, .card {
   box-shadow: -1px 2px 12px -5px #3c3c3c; }
 
@@ -688,7 +744,7 @@ li {
   margin-left: 85.71429%; }
 
 /* Buttons */
-button, .button, button:hover, .button:hover, a.button:hover, .button-pri, .button-pri:hover, a.button-pri:hover, .button-sec, .button-sec:hover, a.button-sec:hover, .button-ter, .button-ter:hover, a.button-ter:hover {
+button, .button, button:hover, .button:hover, a.button:hover, .button-pri, .button-pri:hover, a.button-pri:hover, .button-sec, .button-sec:hover, a.button-sec:hover, .button-ter, .button-ter:hover, a.button-ter:hover, .button-alert, .button-alert:hover, a.button-alert:hover {
   color: #f5f5f5;
   background: #222;
   border: 0px solid #090909;
@@ -699,7 +755,7 @@ button, .button, button:hover, .button:hover, a.button:hover, .button-pri, .butt
 button.shadow {
   box-shadow: inset 0 -4px 0 #090909; }
 
-button:hover, .button:hover, button:hover, a.button:hover, .button-pri:hover, a.button-pri:hover, .button-sec:hover, a.button-sec:hover, .button-ter:hover, a.button-ter:hover, a.button:hover, a.button-pri:hover, a.button-sec:hover, a.button-ter:hover {
+button:hover, .button:hover, button:hover, a.button:hover, .button-pri:hover, a.button-pri:hover, .button-sec:hover, a.button-sec:hover, .button-ter:hover, a.button-ter:hover, .button-alert:hover, a.button-alert:hover, a.button:hover, a.button-pri:hover, a.button-sec:hover, a.button-ter:hover, a.button-alert:hover {
   background: #3c3c3c; }
 
 .button-pri, .button-pri:hover, a.button-pri:hover {
@@ -729,14 +785,23 @@ button:hover, .button:hover, button:hover, a.button:hover, .button-pri:hover, a.
 .button-ter:hover, a.button-ter:hover, a.button-ter:hover {
   background: #068def; }
 
-.wide, .wide:hover {
+.button-alert, .button-alert:hover, a.button-alert:hover {
+  background: #ff3939; }
+
+.button-alert.shadow, a.shadow.button-alert:hover {
+  box-shadow: inset 0 -3px 0 #ec0000; }
+
+.button-alert:hover, a.button-alert:hover, a.button-alert:hover {
+  background: #ff6c6c; }
+
+.wide, .wide:hover, a.wide:hover {
   padding-left: 3rem;
   padding-right: 3rem; }
 
-.square, .square:hover {
+.square, .square:hover, a.wide:hover {
   border-radius: 0; }
 
-button:disabled {
+button:disabled, .button:disabled, button:disabled:hover, a.button:disabled:hover, .button-pri:disabled, a.button-pri:disabled:hover, .button-sec:disabled, a.button-sec:disabled:hover, .button-ter:disabled, a.button-ter:disabled:hover, .button-alert:disabled, a.button-alert:disabled:hover {
   color: #f5f5f5;
   background: #bbb; }
 
@@ -755,11 +820,11 @@ input, textarea {
   margin: 1rem;
   display: inline-block;
   vertical-align: top;
-  width: 30rem;
-  height: 38rem; }
+  width: 20rem;
+  height: 28rem; }
 
 .card img {
-  height: 30rem; }
+  height: 20rem; }
 
 .img-border {
   border-width: 10px; }

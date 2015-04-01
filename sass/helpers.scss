@@ -136,6 +136,11 @@ li {
   width: 0;
   height: 0;
 }
+.invisible {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 /* Position Helpers */
 .pull-left {
@@ -230,6 +235,24 @@ li {
 .white-bg-d {
   background-color: $white-dark;
 }
+.grey-bg {
+  background-color: $grey-base;
+}
+.grey-bg-l {
+  background-color: $grey-light;
+}
+.grey-bg-d {
+  background-color: $grey-dark;
+}
+.alert-bg {
+  background-color: $alert-base;
+}
+.alert-bg-l {
+  background-color: $alert-light;
+}
+.alert-bg-d {
+  background-color: $alert-dark;
+}
 
 /* Text Helpers */
 .txt-center {
@@ -262,9 +285,6 @@ li {
 .black-txt-d {
   color: $black-dark;
 }
-.grey-txt {
-  color: $grey-base;
-}
 .pri-txt {
   color: $primary-base;
 }
@@ -291,6 +311,24 @@ li {
 }
 .ter-txt-d {
   color: $tertiary-dark;
+}
+.grey-txt {
+  color: $grey-base;
+}
+.grey-txt-l {
+  color: $grey-light;
+}
+.grey-txt-d {
+  color: $grey-dark;
+}
+.alert-txt {
+  color: $alert-base;
+}
+.alert-txt-l {
+  color: $alert-light;
+}
+.alert-txt-d {
+  color: $alert-dark;
 }
 .light {
   font-weight: $font-light;
@@ -512,6 +550,24 @@ li {
 }
 .ter-bd-d {
   border: $border-base solid $tertiary-dark;
+}
+.grey-bd {
+  border: $border-base solid $grey-base;
+}
+.grey-bd-l {
+  border: $border-base solid $grey-light;
+}
+.grey-bd-d {
+  border: $border-base solid $grey-dark;
+}
+.alert-bd {
+  border: $border-base solid $alert-base;
+}
+.alert-bd-l {
+  border: $border-base solid $alert-light;
+}
+.alert-bd-d {
+  border: $border-base solid $alert-dark;
 }
 .shadow-lb {
   box-shadow: -1px 2px 12px -5px $black-light;
