@@ -967,6 +967,10 @@ button > i, button:hover > i, .button:hover > i, .button-sec:hover > i, .button-
 .square, .square:hover, a.square:hover {
   border-radius: 0; }
 
+/* Images */
+.thumb {
+  width: 5rem; }
+
 /* Forms */
 input, textarea, select {
   border-radius: 3px;

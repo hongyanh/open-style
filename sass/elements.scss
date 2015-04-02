@@ -141,6 +141,11 @@ button > i, a > i {
   border-radius: 0;
 }
 
+/* Images */
+.thumb {
+  width: $thumb-width;
+}
+
 /* Forms */
 input, textarea, select {
   @extend .white-bd-d;
