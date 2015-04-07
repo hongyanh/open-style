@@ -291,6 +291,7 @@ nav > ul > li {
   position: absolute;
   margin-top: -10px;
   left: 0;
+  z-index: 10;
   & > * {
     background-color: $black-light;
     color: $white-dark;

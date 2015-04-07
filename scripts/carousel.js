@@ -49,9 +49,6 @@ function select_image(obj, num) {
     if (current_image < num) {
         slide_right(Math.abs(current_image - num));
     } else if (current_image > num) {
-        console.log('current-image: ' + current_image);
-        console.log('selected-image: ' + num);
-        console.log(current_image + num);
         slide_left(Math.abs(num - current_image));
     }
     for (var i = 0; i < thumbs.length; i++) {

@@ -1266,7 +1266,8 @@ nav > ul > li {
   display: none;
   position: absolute;
   margin-top: -10px;
-  left: 0; }
+  left: 0;
+  z-index: 10; }
   .info-box .box > * {
     background-color: #3c3c3c;
     color: gainsboro;
