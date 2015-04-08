@@ -1157,7 +1157,8 @@ nav > ul > li {
   position: relative;
   overflow: hidden;
   margin-bottom: .1rem;
-  border: 1px solid white; }
+  border: 1px solid white;
+  background-color: #090909; }
 
 .crs-img {
   height: 100%;

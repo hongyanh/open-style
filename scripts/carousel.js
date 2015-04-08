@@ -1,3 +1,24 @@
+function resize(obj) {
+    var image = obj.children[0];
+    var wrapper_width = obj.offsetWidth;
+    var wrapper_height = obj.offsetHeight;
+    var image_width = image.width;
+    var image_height = image.height;
+    if (image_width > image_height) {
+        image.style.width = '100%';
+        var image_height_perc = image_height / image_width * 100;
+        image.style.height = image_height_perc + '%';
+        var transform_top = (wrapper_height - image_height) / 2;
+        image.style.transform = 'translateY(' +  transform_top + 'px)';
+    } else {
+        image.style.height = '100%';
+        var image_width_perc = image_width / image_height * 100;
+        image.style.width = image_width_perc + '%';
+        var transform_left = (wrapper_width - image.width) / 2;
+        image.style.transform = 'translateX(' +  transform_left + 'px)';
+    }
+}
+
 function slide_left(dif) {
     if (current_image > 0) {
         for (var i = 0; i < images.length; i++) {
@@ -63,6 +84,7 @@ var thumbs = document.getElementsByClassName('thumb');
 var addClassThumb = false;
 for (var i = 0; i < images.length; i++) {
     images[i].style.transform = 'translateX(' + i * 100 + '%)';
+    resize(images[i]);
 }
 document.getElementsByClassName('left')[0].style.display = 'none';
 if (thumbs.length === 1) {
