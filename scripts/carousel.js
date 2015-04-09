@@ -18,7 +18,6 @@ function resize(obj) {
         image.style.transform = 'translateX(' +  transform_left + 'px)';
     }
 }
-
 function slide_left(dif) {
     if (current_image > 0) {
         for (var i = 0; i < images.length; i++) {
@@ -65,7 +64,6 @@ function slide_right(dif) {
         document.getElementsByClassName('right')[0].style.display = "none";
     }
 }
-
 function select_image(obj, num) {
     if (current_image < num) {
         slide_right(Math.abs(current_image - num));
@@ -77,16 +75,22 @@ function select_image(obj, num) {
     }
     obj.className = 'thumb active';
 }
-
+var counter = 0;
 var images = document.getElementsByClassName('crs-img');
 var current_image = 0;
 var thumbs = document.getElementsByClassName('thumb');
 var addClassThumb = false;
-for (var i = 0; i < images.length; i++) {
-    images[i].style.transform = 'translateX(' + i * 100 + '%)';
-    resize(images[i]);
-}
 document.getElementsByClassName('left')[0].style.display = 'none';
 if (thumbs.length === 1) {
     document.getElementsByClassName('right')[0].style.display = 'none';
+}
+for (var i = 0; i < images.length; i++) {
+    if (images[i].children[0].complete) {
+        resize(images[i]);
+    } else {
+        images[i].children[0].onload = function() {
+            resize(this.parentElement);
+        }
+    }
+    images[i].style.transform = 'translateX(' + i * 100 + '%)';
 }
