@@ -264,9 +264,13 @@ nav > ul > li {
   }
   &:before {
     transform: rotate3d(0,0,1,45deg);
+    -ms-transform: rotate3d(0,0,1,45deg);
+    -webkit-transform: rotate3d(0,0,1,45deg);
   }
   &:after {
     transform: rotate3d(0,0,1,-45deg);
+    -ms-transform: rotate3d(0,0,1,-45deg);
+    -webkit-transform: rotate3d(0,0,1,-45deg);
   }
 }
 .flash .close {
