@@ -1,3 +1,8 @@
+function transform(obj, pos) {
+    obj.style.transform = pos;
+    obj.style.WebkitTransform = pos; 
+    obj.style.msTransform = pos;
+}
 function resize(obj) {
     var image = obj.children[0];
     var wrapper_width = obj.offsetWidth;
@@ -9,20 +14,20 @@ function resize(obj) {
         var image_height_perc = image_height / image_width * 100;
         image.style.height = image_height_perc + '%';
         var transform_top = (wrapper_height - image_height) / 2;
-        image.style.transform = 'translateY(' +  transform_top + 'px)';
+        transform(image, 'translateY(' +  transform_top + 'px)');
     } else {
         image.style.height = '100%';
         var image_width_perc = image_width / image_height * 100;
         image.style.width = image_width_perc + '%';
         var transform_left = (wrapper_width - image.width) / 2;
-        image.style.transform = 'translateX(' +  transform_left + 'px)';
+        transform(image, 'translateX(' +  transform_left + 'px)');
     }
 }
 function slide_left(dif) {
     if (current_image > 0) {
         for (var i = 0; i < images.length; i++) {
             var current_position = images[i].style.transform.match(/-?\d+/)[0];
-            images[i].style.transform = 'translateX(' + (parseInt(current_position) + dif * 100 ) + '%)';
+            transform(images[i],'translateX(' + (parseInt(current_position) + dif * 100 ) + '%)');
             images[i].style.transition = 'transform .5s linear';
         }
         for (var i = thumbs.length - 1; i > -1; i--) {
@@ -45,7 +50,7 @@ function slide_right(dif) {
     if (current_image < images.length-1) {
         for (var i = 0; i < images.length; i++) {
             var current_position = images[i].style.transform.match(/-?\d+/)[0];
-            images[i].style.transform = 'translateX(' + (parseInt(current_position) - dif * 100 ) + '%)';
+            transform(images[i],'translateX(' + (parseInt(current_position) - dif * 100 ) + '%)');
             images[i].style.transition = 'transform .5s linear';
         }
         for (var i = 0; i < thumbs.length; i++) {
@@ -92,5 +97,5 @@ for (var i = 0; i < images.length; i++) {
             resize(this.parentElement);
         }
     }
-    images[i].style.transform = 'translateX(' + i * 100 + '%)';
+    transform(images[i], 'translateX(' + i * 100 + '%)');
 }
