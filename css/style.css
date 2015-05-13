@@ -170,14 +170,12 @@ li {
 .container-s {
   max-width: 53.33333rem;
   margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; }
+  margin-right: auto; }
 
 .container-l {
   max-width: 120rem;
   margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; }
+  margin-right: auto; }
 
 .hidden {
   display: none;
@@ -870,7 +868,8 @@ button, button:hover, .button:hover, .button-sec:hover, .button-ter:hover, .butt
   font-weight: 300;
   cursor: pointer;
   white-space: nowrap;
-  transition: background .5s ease, color .5s ease, box-shadow .5s ease, border .5s ease; }
+  transition: background .5s ease, color .5s ease, box-shadow .5s ease, border .5s ease;
+  display: inline-block; }
   button:hover, .button:hover, .button-sec:hover, .button-ter:hover, .button-alert:hover, .button-pri:hover, .button:hover, .button-sec:hover, .button-ter:hover, .button-alert:hover {
     background: #3c3c3c; }
   button.shadow, .shadow.button:hover, .shadow.button-sec:hover, .shadow.button-ter:hover, .shadow.button-alert:hover, .shadow.button-pri, .button.shadow, .shadow.button-sec, .shadow.button-ter, .shadow.button-alert {
@@ -1298,7 +1297,7 @@ nav > ul > li {
     background-color: #3c3c3c;
     color: gainsboro;
     margin-top: 10px;
-    white-space: pre; }
+    width: 200px; }
   .info-box .box:before {
     content: " ";
     width: 0;
@@ -1320,6 +1319,7 @@ nav > ul > li {
   left: 100%;
   top: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
 
 /*# sourceMappingURL=style.css.map */

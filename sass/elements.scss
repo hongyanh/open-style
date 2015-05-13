@@ -9,6 +9,7 @@ button, .button {
   cursor: pointer;
   white-space: nowrap;
   transition: background .5s ease, color .5s ease, box-shadow .5s ease, border .5s ease;
+  display: inline-block;
   &:hover {
     @extend button;
     background: $black-light;
