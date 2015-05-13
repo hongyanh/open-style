@@ -117,8 +117,8 @@ button > i, a > i {
   background: $grey-base;
   border-color: $grey-dark;
   &:hover {
-    background: $primary-light;
-    border-color: $primary-dark;
+    background: $grey-light;
+    border-color: $grey-dark;
   }
   &.active {
     background: $primary-base;
@@ -186,4 +186,27 @@ input:focus, textarea:focus {
   border-top: $size solid transparent;
   border-bottom: $size solid transparent; 
   border-right:$size solid $color;
+}
+
+/* list */
+.list {
+  list-style-type: none;
+  background-color: $white-light;
+  & li {
+    margin: 0;
+    border-top: 1px solid $white-dark;
+    border-left: 1px solid $white-dark;
+    border-right: 1px solid $white-dark;
+    padding: 1rem;
+    &:last-of-type {
+      border-bottom: 1px solid $white-dark;
+    }
+    &:hover {
+      background-color: $white-base;
+    }
+    &.active {
+      color: $white-light;
+      background-color: $primary-base;
+    }
+  }
 }

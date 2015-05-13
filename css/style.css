@@ -677,6 +677,10 @@ li {
 .icon-l {
   width: 3rem; }
 
+/* cursor helper */
+.pointer {
+  cursor: pointer; }
+
 [class*='col-'] {
   float: left; }
 
@@ -948,8 +952,8 @@ button > i, button:hover > i, .button:hover > i, .button-sec:hover > i, .button-
   background: #bbb;
   border-color: #aeaeae; }
   .toggle:hover {
-    background: #f9ac50;
-    border-color: #db7a08; }
+    background: #c8c8c8;
+    border-color: #aeaeae; }
   .toggle.active {
     background: #f7941f;
     border-color: #db7a08; }
@@ -979,6 +983,24 @@ input, textarea, select {
   transition: border 0.5s ease; }
 
 /* arrows */
+/* list */
+.list {
+  list-style-type: none;
+  background-color: white; }
+  .list li {
+    margin: 0;
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    padding: 1rem; }
+    .list li:last-of-type {
+      border-bottom: 1px solid gainsboro; }
+    .list li:hover {
+      background-color: #f5f5f5; }
+    .list li.active {
+      color: white;
+      background-color: #f7941f; }
+
 .card {
   margin: 1rem;
   display: inline-block;
@@ -1218,8 +1240,7 @@ nav > ul > li {
   background-color: #f5f5f5;
   width: 50%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 5%;
   padding: 2rem;
   left: 25%; }
 
@@ -1288,5 +1309,17 @@ nav > ul > li {
 
 .info-box:hover .box {
   display: block; }
+
+.nested-list > .list li {
+  position: relative; }
+.nested-list > .list li:hover .list {
+  display: block; }
+.nested-list > .list .list {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

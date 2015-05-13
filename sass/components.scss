@@ -236,8 +236,7 @@ nav > ul > li {
   background-color: $white-base;
   width: $modal-width;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 5%;
   padding: 2rem;
   left: (100% - $modal-width) / 2;
 }
@@ -311,4 +310,22 @@ nav > ul > li {
 }
 .info-box:hover .box {
   display: block;
+}
+.nested-list {
+  & > .list {
+    & li {
+      position: relative;
+    }
+    & li:hover .list {
+      display: block;
+    }
+  }
+  & > .list .list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0;
+    width: 100%;
+  }
 }

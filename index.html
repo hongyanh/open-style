@@ -258,6 +258,10 @@
         <button class="button outline square shadow">.button .outline .square .shadow </button>
         <button class="button suqare shadow" disabled>.button .square .shadow :disabled</button>
       </div>
+      <div class="clear-float margin-t1b1">
+          <button class="toggle active" onclick="toggleClick(this)">.toggle.active</button><button class="toggle" onclick="toggleClick(this)">.toggle</button>
+          <p class="bold">Note: please include "<a href="scripts/toggle.js" target="_blank" download>scripts/toggle.js</a>" at the end of your body tag.</p>
+      </div>
     </div>
     <div class="clear-float"></div>
     <div class="padding-1">
@@ -279,6 +283,17 @@
         <pre><code>&lt;textarea cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
         <p class="bold">Use .square for hard corners</p>
         <pre><code>&lt;textarea class="square" cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="list">List</h3>
+      <div class="col-1of2">
+        <ul class="list">
+          <li>ul.list > li</li>
+          <li>ul.list > li</li>
+          <li class="active">ul.list > li.active</li>
+        </ul>
       </div>
     </div>
     <div class="clear-float"></div>
@@ -456,6 +471,34 @@
           </code></pre>
         </div>
       </div>
+      <h4>.nested-list</h4>
+      <p class="bold">Note: maximum 2 layers, please include "<a href="scripts/list.js" target="_blank" download>scripts/list.js</a>" at the end of your body tag.</p>
+      <div class="nested-list">
+        <ul class="list col-1of2">
+          <li>A
+            <ul class="list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </li>
+          <li>B
+            <ul class="list">
+              <li>a</li>
+              <li>b</li>
+              <li>c</li>
+              <li>d</li>
+            </ul>
+          </li>
+          <li>C
+            <ul class="list">
+              <li>1</li>
+              <li>2</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clear-float"></div>
       <div class="margin-t2">
         <h4>.crs (carousel)</h4>
         <p class="bold">Note: please include "<a href="scripts/carousel.js" target="_blank" download>scripts/carousel.js</a>" at the end of your body tag.</p>
@@ -519,6 +562,7 @@
           <button class="close" onclick="close_modal()"></button>
         </div>
       </div>
+      <div class="clear-float"></div>
     </div>
     <hr>
     <p class="txt-center light black-txt-l">Created by <a href="http://onlyhongyan.com" target="_blank">Yan Hong</a>, 2015</p>
@@ -534,5 +578,6 @@
   <script src="scripts/carousel.js"></script>
   <script src="scripts/modal.js"></script>
   <script src="scripts/flash.js"></script>
+  <script src="scripts/toggle.js"></script>
 </body>
 </html>
