@@ -1007,8 +1007,20 @@ input, textarea, select {
   width: 20rem;
   height: 28rem; }
 
-.card img {
-  height: 20rem; }
+.card .img-container {
+  height: 20rem;
+  background-color: #090909;
+  position: relative; }
+  .card .img-container img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
 
 .img-border {
   border-width: 10px; }

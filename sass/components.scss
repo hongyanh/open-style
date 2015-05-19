@@ -6,8 +6,21 @@
   width: $card-width;
   height: $card-height;
 }
-.card img {
+.card .img-container {
   height: $card-img-height;
+  background-color: $black-dark;
+  position: relative;
+  & img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .img-border {
   @extend .white-bd-l;
