@@ -180,12 +180,14 @@ li {
 .hidden {
   display: none;
   width: 0;
-  height: 0; }
+  height: 0;
+  overflow: hidden; }
 
 .invisible {
   visibility: hidden;
   width: 0;
-  height: 0; }
+  height: 0;
+  overflow: hidden; }
 
 /* Position Helpers */
 .pull-left {
@@ -1020,7 +1022,9 @@ input, textarea, select {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); }
 
 .img-border {
   border-width: 10px; }
@@ -1044,7 +1048,9 @@ input, textarea, select {
 .center-v {
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 .bg-video {
   position: relative;

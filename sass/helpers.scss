@@ -176,11 +176,13 @@ li {
   display: none;
   width: 0;
   height: 0;
+  overflow: hidden;
 }
 .invisible {
   visibility: hidden;
   width: 0;
   height: 0;
+  overflow: hidden;
 }
 
 /* Position Helpers */
