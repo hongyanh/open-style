@@ -1,5 +1,32 @@
-# Open Style
+# Open Style v2
 A starter kit for website styling, enjoy it!
+
+## Change Log
+* Font size
+* Font style
+* Responsive design
+* Button style
+* Search in Documentation
+* More helper functions
+* More components
+** Datetime picker
+** List view
+** Parallax bg
+** Scrolling video
+** Image cropper
+** Tagging
+** Sidenav
+** Popup messages
+* Nav bar improvements
+* Easier to customize
+** Option to include .css files separately
+** More variables
+* Form style + front-end validation
+* Tabel view
+* Installation
+** pip
+** gem
+** nodejs support
 
 ## CSS
 * normalize.css makes browsers render all elements more consistently and in line with modern standards
