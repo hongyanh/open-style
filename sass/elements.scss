@@ -2,72 +2,157 @@
 button, .button {
   color: $white-base;
   background: $black-base;
-  border: 0px solid $black-dark;
+  border: 1px solid $black-dark;
   border-radius: $radius-base;
   padding: $size-r1;
-  transition: background 0.5s ease;
-}
-button.shadow {
-  box-shadow: inset 0 -4px 0 $black-dark;
-}
-button:hover, .button:hover, a.button:hover {
-  @extend .button;
-  background: $black-light;
+  font-weight: $font-light;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .5s ease, color .5s ease, box-shadow .5s ease, border .5s ease;
+  display: inline-block;
+  &:hover {
+    @extend button;
+    background: $black-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $black-dark;
+  }
 }
 .button-pri {
-  @extend .button;
+  @extend button;
   background: $primary-base;
-}
-.button-pri.shadow {
-  box-shadow: inset 0 -4px 0 $primary-dark;
-}
-.button-pri:hover, a.button-pri:hover {
-  @extend .button-pri;
-  background: $primary-light;
+  border: 1px solid $primary-dark;
+  &:hover {
+    @extend .button-pri;
+    background: $primary-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $primary-dark;
+    &:hover {
+      box-shadow: inset 0 -3px 0 $primary-dark;
+    }
+  }
 }
 .button-sec {
   @extend .button;
   background: $secondary-base;
-}
-.button-sec.shadow {
-  box-shadow: inset 0 -4px 0 $secondary-dark;
-}
-.button-sec:hover, a.button-sec:hover {
-  @extend .button-sec;
-  background: $secondary-light;
+  border: 1px solid $secondary-dark;
+  &:hover {
+    @extend .button-sec;
+    background: $secondary-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $secondary-dark;
+    &:hover {
+      box-shadow: inset 0 -3px 0 $secondary-dark;
+    }
+  }
 }
 .button-ter {
   @extend .button;
   background: $tertiary-base;
+  border: 1px solid $tertiary-dark;
+  &:hover {
+    @extend .button-ter;
+    background: $tertiary-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $tertiary-dark;
+    &:hover {
+      box-shadow: inset 0 -3px 0 $tertiary-dark;
+    }
+  }
 }
-.button-ter.shadow {
-  box-shadow: inset 0 -4px 0 $tertiary-dark;
+.button-alert {
+  @extend .button;
+  background: $alert-base;
+  border: 1px solid $alert-dark;
+  &:hover {
+    @extend .button-alert;
+    background: $alert-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $alert-dark;
+    &:hover {
+      box-shadow: inset 0 -3px 0 $alert-dark;
+    }
+  }
 }
-.button-ter:hover, a.button-ter:hover{
-  @extend .button-ter;
-  background: $tertiary-light;
+.outline {
+  background: transparent;
+  color: $grey-dark;
+  border: 1px solid $grey-dark;
+  &:hover {
+    @extend .outline;
+    color: $black-light;
+    border: 1px solid $black-light;
+  }
+  &.shadow {
+    box-shadow: inset 0 -3px 0 $grey-dark;
+  }
 }
-.wide,.wide:hover {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.square, .square:hover {
-  border-radius: 0;
-}
-button:disabled{
+button:disabled, a.button.disabled, input:disabled{
   color: $white-base;
   background: $grey-base;
+  border: 1px solid $grey-base;
+  cursor: default;
+  &:hover {
+    color: $white-base;
+    background: $grey-base;
+    border: 1px solid $grey-base;
+  }
+}
+button.shadow:disabled, a.button.shadow.disabled, input.shadow:disabled {
+  box-shadow: inset 0 -3px 0 $grey-base;
 }
 button.clear {
   background: none;
   padding: 0;
+  border: none;
+}
+button > i, a > i {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+.toggle {
+  background: $grey-base;
+  border-color: $grey-dark;
+  &:hover {
+    background: $grey-light;
+    border-color: $grey-dark;
+  }
+  &.active {
+    background: $primary-base;
+    border-color: $primary-dark;
+  }
+  &:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.wide, .wide:hover, a.wide:hover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.square, .square:hover, a.square:hover {
+  border-radius: 0;
+}
+
+/* Images */
+.thumb {
+  width: $thumb-width;
 }
 
 /* Forms */
-input, textarea {
+input, textarea, select {
   @extend .white-bd-d;
   border-radius: $radius-base;
   padding: $size-r1;
+  font-weight: $font-light;
   transition: border 0.5s ease;
 }
 input:focus, textarea:focus {
@@ -102,4 +187,27 @@ input:focus, textarea:focus {
   border-top: $size solid transparent;
   border-bottom: $size solid transparent; 
   border-right:$size solid $color;
+}
+
+/* list */
+.list {
+  list-style-type: none;
+  background-color: $white-light;
+  & li {
+    margin: 0;
+    border-top: 1px solid $white-dark;
+    border-left: 1px solid $white-dark;
+    border-right: 1px solid $white-dark;
+    padding: 1rem;
+    &:last-of-type {
+      border-bottom: 1px solid $white-dark;
+    }
+    &:hover {
+      background-color: $white-base;
+    }
+    &.active {
+      color: $white-light;
+      background-color: $primary-base;
+    }
+  }
 }

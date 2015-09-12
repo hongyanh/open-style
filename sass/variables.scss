@@ -6,11 +6,7 @@ $font-normal: 400;
 $font-semi: 600;
 $font-bold: 700;
 $font-extra: 800;
-
 $font-size: 14px;
-
-$h1-size: 3rem;
-$h2-size: 2rem;
 
 $size-p1: 1%;
 $size-p2: $size-p1 * 2;
@@ -29,7 +25,7 @@ $border-base: 1px;
 $primary-base: #f7941f;
 $secondary-base: #2F9778;
 $tertiary-base: #0570bd;
-
+$alert-base: #ff3939;
 $black-base: #222;
 $white-base: #f5f5f5;
 $grey-base: #bbb;
@@ -49,11 +45,22 @@ $black-dark: darken( $black-base, 10%);
 $white-light: lighten( $white-base, 10%);
 $white-dark: darken( $white-base, 10%);
 
+$alert-light: lighten( $alert-base, 10%);
+$alert-dark: darken( $alert-base, 15%);
+
+$grey-light: lighten( $grey-base, 5%);
+$grey-dark: darken( $grey-base, 5%);
+
 $background-color: $white-light;
 $link-color: $primary-base;
 $link-color-hover: $primary-light;
+
+$card-width: 20rem;
+$card-height: 28rem;
+$card-img-height: 20rem;
 
 $carousel-width: 500px;
 $carousel-height: 500px;
 
 $modal-width: 50%;
+$thumb-width: 5rem;

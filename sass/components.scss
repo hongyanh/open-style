@@ -1,6 +1,28 @@
 .card {
   @extend .shadow-lb;
   margin: $size-r1;
+  display: inline-block;
+  vertical-align: top;
+  width: $card-width;
+  height: $card-height;
+}
+.card .img-container {
+  height: $card-img-height;
+  background-color: $black-dark;
+  position: relative;
+  & img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
 }
 .img-border {
   @extend .white-bd-l;
@@ -26,6 +48,8 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 .bg-video {
   position: relative;
@@ -36,23 +60,26 @@ video#bgvid {
   min-height: 100%;
   z-index: -1;
 }
-.flash-pri {
-  @extend .pri-bd-l;
+.flash {
+  @extend .full-width;
   padding: $size-r1;
-  background-color: $primary-base;
   color: $white-base;
+  position: relative;
+}
+.flash-pri {
+  @extend .flash;
+  @extend .pri-bd-l;
+  background-color: $primary-base;
 }
 .flash-sec {
+  @extend .flash;
   @extend .sec-bd-l;
-  padding: $size-r1;
   background-color: $secondary-base;
-  color: $white-base;
 }
 .flash-ter {
+  @extend .flash;
   @extend .ter-bd-l;
-  padding: $size-r1;
   background-color: $tertiary-base;
-  color: $white-base;
 }
 nav > ul > li {
   display: inline-block;
@@ -78,6 +105,7 @@ nav > ul > li {
   cursor: pointer;
   position:relative;
   float: left;
+  width: 100%;
 }
 .dropdown > ul {
   box-shadow: 0px 2px 10px -5px rgba(100,100,100,.5);
@@ -90,6 +118,7 @@ nav > ul > li {
   text-align: left;
   white-space: nowrap;
   z-index: 1;
+  margin: 0;
 }
 .dropdown > ul > li {
   margin: 0;
@@ -161,6 +190,7 @@ nav > ul > li {
   overflow: hidden;
   margin-bottom: .1rem;
   border: 1px solid $white-light;
+  background-color: $black-dark;
 }
 .crs-img {
   height: 100%;
@@ -190,7 +220,8 @@ nav > ul > li {
   width: $carousel-width;
   .thumb {
     float: left;
-    width: 100px;
+    width: $carousel-width / 5;
+    height: $carousel-height / 5;
     border: 1px solid $white-light;
     &.active {
       border: 1px solid $primary-base;
@@ -222,8 +253,7 @@ nav > ul > li {
   background-color: $white-base;
   width: $modal-width;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 5%;
   padding: 2rem;
   left: (100% - $modal-width) / 2;
 }
@@ -250,8 +280,70 @@ nav > ul > li {
   }
   &:before {
     transform: rotate3d(0,0,1,45deg);
+    -ms-transform: rotate3d(0,0,1,45deg);
+    -webkit-transform: rotate3d(0,0,1,45deg);
   }
   &:after {
     transform: rotate3d(0,0,1,-45deg);
+    -ms-transform: rotate3d(0,0,1,-45deg);
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+  }
+}
+.flash .close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 15px;
+  right: 10px;
+  &:before, &:after {
+    width: 25px;
+    height: 2px;
+    top: 10px;
+    right: 0px;
+    background-color: #fff;
+  }
+}
+.info-box {
+  display: inline;
+  position: relative;
+}
+.info-box .box {
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+  left: 0;
+  z-index: 10;
+  & > * {
+    background-color: $black-light;
+    color: $white-dark;
+    margin-top: 10px;
+    width: 200px;
+    @extend .padding-1;
+  }
+  &:before {
+    content: " ";
+    @include arrow-up($black-light, 10px);
+  }
+}
+.info-box:hover .box {
+  display: block;
+}
+.nested-list {
+  & > .list {
+    & li {
+      position: relative;
+    }
+    & li:hover .list {
+      display: block;
+    }
+  }
+  & > .list .list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 5;
   }
 }
