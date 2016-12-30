@@ -207,6 +207,11 @@ li {
 .block {
   display: block;
 }
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 
 /* Layer Helpers */
 .fix {
