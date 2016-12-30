@@ -224,6 +224,15 @@ li {
 .absolute {
   position: absolute; }
 
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 .relative {
   position: relative; }
 
@@ -1705,5 +1714,3 @@ nav > ul > li {
   padding: 0;
   width: 100%;
   z-index: 5; }
-
-/*# sourceMappingURL=style.css.map */
