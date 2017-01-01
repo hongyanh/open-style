@@ -207,6 +207,11 @@ li {
 .block {
   display: block;
 }
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 
 /* Layer Helpers */
 .fix {
@@ -215,6 +220,11 @@ li {
 }
 .absolute {
   position: absolute;
+}
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
 }
 .relative {
   position: relative;
